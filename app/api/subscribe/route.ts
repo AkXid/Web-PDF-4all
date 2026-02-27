@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
+  console.log("API Route aufgerufen");
   const { vorname, email } = await req.json();
+  console.log("Email:", email);
 
   if (!email) {
     return NextResponse.json({ error: "E-Mail fehlt" }, { status: 400 });
