@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { RevealOnScroll } from "@/components/shared/RevealOnScroll";
 import { stagger, fadeUp } from "@/lib/animations";
 import { services } from "@/lib/services-data";
-import { Tags, FormInput, Archive, ShieldCheck, ImageIcon, Handshake } from "lucide-react";
+import { Tags, FormInput, Archive, ShieldCheck, ImageIcon, Handshake, FileCheck } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Tags,
