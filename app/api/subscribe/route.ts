@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const response = await fetch("https://api.brevo.com/v3/contacts", {
+    const response = await fetch("https://api.brevo.com/v3/contacts/doubleOptinConfirmation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,8 +19,9 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         email,
         attributes: { VORNAME: vorname || "" },
-        listIds: [5],
-        updateEnabled: true,
+        templateId: 14,
+        redirectionUrl: "https://www.pdf-4all.de",
+        includeListIds: [5],
       }),
     });
 
