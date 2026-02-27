@@ -21,6 +21,9 @@ export function LeadMagnet() {
       body: JSON.stringify({ vorname, email }),
     });
 
+    const data = await res.json();
+    console.log("API Response:", JSON.stringify(data));
+
     if (res.ok) {
       setStatus("success");
     } else {
