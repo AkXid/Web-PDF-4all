@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     body: JSON.stringify({
       email,
       attributes: { VORNAME: vorname || "" },
-      listIds: [3],
+      listIds: [5],
       updateEnabled: true,
     }),
   });
