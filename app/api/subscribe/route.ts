@@ -21,7 +21,6 @@ export async function POST(req: NextRequest) {
         attributes: { VORNAME: vorname || "" },
         templateId: 14,
         redirectionUrl: "https://kdrive.infomaniak.com/app/share/446193/70787b0b-1dfe-497f-96c2-e2acc90792c2",
-        includeListIds: [5],
         includeListIdsAfterValidation: [5],
       }),
     });
