@@ -21,6 +21,7 @@ export async function POST(req: NextRequest) {
         attributes: { VORNAME: vorname || "" },
         templateId: 14,
         redirectionUrl: "https://www.pdf-4all.de",
+        includeListIds: [5],
         includeListIdsAfterValidation: [5],
       }),
     });
