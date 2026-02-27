@@ -1,19 +1,10 @@
 "use client";
-import { useState } from "react";
 import { RevealOnScroll } from "@/components/shared/RevealOnScroll";
 import { leadMagnetContent, siteConfig } from "@/lib/config";
 import { Download } from "lucide-react";
 
-const BREVO_FORM_URL = "https://aa59aa08.sibforms.com/serve/MUIFALMuGSShu4CR611F9hD-1ewcUvlQM5MWYgbSTKtDZmY9FCmQlhHZi2HahZC4LRIhlr_fZwCbmOplTNKNHyzEBPFYOb3zY0QEmay3IkzP_pY2OA6GsnFuhL0jzoUocli4d2QdRyHitq6UaYD2HnAPAP05Rz420UNqrEJ-QDFj-nMHAKeXOcWmGAlOZPWtaizhTMbAoRrM9HJvWQ==";
-
 export function LeadMagnet() {
-  const [submitted, setSubmitted] = useState(false);
-
   if (siteConfig.features.leadMagnet === "none" || !siteConfig.features.leadMagnet) return null;
-
-  function handleSubmit() {
-    setTimeout(() => setSubmitted(true), 1000);
-  }
 
   return (
     <section className="bg-[#1a365d] text-white py-16 md:py-20">
@@ -26,32 +17,15 @@ export function LeadMagnet() {
           <p className="text-white/80 leading-relaxed mb-8">
             {leadMagnetContent.subtitle}
           </p>
-
-          {submitted ? (
-            <div className="bg-white/10 rounded-md px-6 py-4 text-white text-lg font-medium">
-              ✅ Fast geschafft! Bitte bestätige deine E-Mail-Adresse.
-            </div>
-          ) : (
-            <>
-              <iframe name="brevo_iframe" style={{ display: "none" }} />
-              <form
-                method="POST"
-                action={BREVO_FORM_URL}
-                target="brevo_iframe"
-                onSubmit={handleSubmit}
-                className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto"
-              >
-                <input type="text" name="VORNAME" placeholder="Ihr Name" className="flex-1 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white" />
-                <input type="email" name="EMAIL" placeholder="Ihre E-Mail" required className="flex-1 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white" />
-                <input type="text" name="email_address_check" defaultValue="" className="hidden" />
-                <input type="hidden" name="locale" value="de" />
-                <input type="hidden" name="html_type" value="simple" />
-                <button type="submit" className="bg-[#b45309] hover:bg-[#d97706] text-white font-semibold px-5 py-2 rounded-md shrink-0 transition-colors">
-                  {leadMagnetContent.cta}
-                </button>
-              </form>
-            </>
-          )}
+          <iframe
+            width="540"
+            height="305"
+            src="https://aa59aa08.sibforms.com/serve/MUIFAOClEhRVrwQChlmrs8v0bZsNOd-uSNgjXbnAC_xNBMbF6qSWb0EhjXAybr6nv6g6d4geYXXWbvUrf0yt7I5LPME8b2blEjxqV-wPtFUiK1I1e6vYEmH7E3IMBS1U6NMX3iprryzZ3Vb9nePaFvYzjVGC782jQxjgELio6ZTgGkODD_DBNUFOAIHJx5uJST9gV71hS94lQpFQ7g=="
+            frameBorder="0"
+            scrolling="auto"
+            allowFullScreen
+            style={{ display: "block", marginLeft: "auto", marginRight: "auto", maxWidth: "100%" }}
+          />
         </RevealOnScroll>
       </div>
     </section>
