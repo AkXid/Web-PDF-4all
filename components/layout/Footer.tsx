@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Clock, Linkedin } from "lucide-react";
+import { Mail, Phone, Clock, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/config";
 import { services } from "@/lib/services-data";
 
@@ -75,11 +75,13 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>
-                  {siteConfig.company.address.street}, {siteConfig.company.address.zip}{" "}
-                  {siteConfig.company.address.city}
-                </span>
+                <Phone className="w-4 h-4 mt-0.5 shrink-0" />
+                <a
+                  href={`tel:${siteConfig.company.phone.replace(/\s/g, "")}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {siteConfig.company.phone}
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" />

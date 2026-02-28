@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/lib/config";
 import { services } from "@/lib/services-data";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, Clock, Send } from "lucide-react";
 
 // ⚠️  FORMSPREE: Deine Form-ID hier eintragen!
 // 1. Geh auf https://formspree.io und erstelle ein neues Formular
@@ -217,15 +217,7 @@ export default function KontaktPage() {
                     </a>
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-medium text-slate-900">Adresse</p>
-                    <p>{siteConfig.company.address.street}</p>
-                    <p>{siteConfig.company.address.zip} {siteConfig.company.address.city}</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
+<li className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
                   <div>
                     <p className="font-medium text-slate-900">Erreichbarkeit</p>
