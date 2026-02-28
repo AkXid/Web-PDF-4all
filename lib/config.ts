@@ -106,7 +106,7 @@ export const heroContent = {
 
 export const leadMagnetContent = {
   type: "checklist",
-  title: "Bist du BFSG-ready?",
+  title: "Dein kostenloser BFSG-Leitfaden",
   subtitle: "Der kostenlose Leitfaden, der dir zeigt, was dein Unternehmen jetzt tun muss",
   cta: "Leitfaden kostenlos herunterladen",
   description: "Prüfen Sie in 5 Minuten, ob Ihre PDFs die wichtigsten Barrierefreiheitsanforderungen erfüllen.",
