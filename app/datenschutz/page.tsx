@@ -37,22 +37,35 @@ export default function DatenschutzPage() {
             Einwilligung) sowie die einschlägigen Bestimmungen der LOPDGDD.
           </p>
 
-          {/* 3. Hosting – GitHub Pages */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">3. Hosting – GitHub Pages</h2>
+          {/* 3. Hosting */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">3. Hosting – Vercel &amp; GitHub</h2>
+
+          <p><strong>3a. Vercel (Produktivbetrieb)</strong></p>
           <p>
-            Diese Website wird über <strong>GitHub Pages</strong> (GitHub, Inc., 88 Colin P. Kelly Jr. St.,
-            San Francisco, CA 94107, USA) gehostet. Beim Aufruf der Website werden automatisch
-            technische Zugriffsdaten in Server-Logfiles gespeichert, darunter IP-Adresse,
+            Diese Website wird über <strong>Vercel</strong> (Vercel, Inc., 340 S Lemon Ave #4133,
+            Walnut, CA 91789, USA) gehostet und ausgeliefert. Beim Aufruf der Website verarbeitet
+            Vercel automatisch technische Zugriffsdaten in Server-Logfiles, darunter IP-Adresse,
             Browsertyp, Betriebssystem, Referrer-URL sowie Datum und Uhrzeit des Zugriffs.
           </p>
           <p>
-            Diese Daten werden von GitHub erhoben und nicht von mir kontrolliert. Die Verarbeitung
-            erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am
-            sicheren Betrieb der Website). GitHub ist unter dem EU-US Data Privacy Framework
-            zertifiziert. Weitere Informationen:{" "}
-            <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection"
+            Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+            Interesse am sicheren und performanten Betrieb der Website). Vercel ist unter dem
+            EU-US Data Privacy Framework zertifiziert. Weitere Informationen:{" "}
+            <a href="https://vercel.com/legal/privacy-policy"
               target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
-              GitHub Pages Datenschutz
+              Datenschutzrichtlinie Vercel
+            </a>
+          </p>
+
+          <p><strong>3b. GitHub (Quellcode-Repository)</strong></p>
+          <p>
+            Der Quellcode dieser Website wird auf <strong>GitHub</strong> (GitHub, Inc., 88 Colin P.
+            Kelly Jr. St., San Francisco, CA 94107, USA) verwaltet. Dabei werden keine
+            personenbezogenen Daten der Website-Besucher an GitHub übermittelt. GitHub ist unter
+            dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen:{" "}
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              GitHub Datenschutz
             </a>
           </p>
 
