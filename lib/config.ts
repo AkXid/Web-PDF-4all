@@ -106,9 +106,9 @@ export const heroContent = {
 
 export const leadMagnetContent = {
   type: "checklist",
-  title: "PDF/UA-Checkliste für Einsteiger",
-  subtitle: "12 Punkte, die jedes barrierefreie PDF erfüllen muss",
-  cta: "Checkliste kostenlos herunterladen",
+  title: "Bist du BFSG-ready?",
+  subtitle: "Der kostenlose Leitfaden, der dir zeigt, was dein Unternehmen jetzt tun muss",
+  cta: "Leitfaden kostenlos herunterladen",
   description: "Prüfen Sie in 5 Minuten, ob Ihre PDFs die wichtigsten Barrierefreiheitsanforderungen erfüllen.",
 };
 
