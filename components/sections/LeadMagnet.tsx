@@ -57,13 +57,13 @@ export function LeadMagnet() {
               ✅ Fast geschafft! Bitte prüfe deine E-Mail und bestätige deine Anmeldung.
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 justify-center mx-auto">
               <input
                 type="text"
                 placeholder="Ihr Name"
                 value={vorname}
                 onChange={(e) => setVorname(e.target.value)}
-                className="flex-1 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-36 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
               />
               <input
                 type="email"
@@ -71,7 +71,7 @@ export function LeadMagnet() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-40 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
               />
               <button
                 type="submit"
