@@ -216,8 +216,8 @@ export default function KontaktPage() {
                   <div>
                     <p className="font-medium text-slate-900">E-Mail</p>
                     <ProtectedLink
-                      textParts={["bena", "@pdf", "-4all", ".de"]}
-                      hrefParts={["mail", "to:b", "ena@pdf", "-4all.de"]}
+                      textParts={["info", "@pdf", "-4all", ".de"]}
+                      hrefParts={["mail", "to:i", "nfo@pdf", "-4all.de"]}
                       className="hover:text-[#1a365d]"
                     />
                   </div>

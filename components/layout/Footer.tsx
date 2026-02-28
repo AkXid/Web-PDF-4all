@@ -71,8 +71,8 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
                 <ProtectedLink
-                  textParts={["bena", "@pdf", "-4all", ".de"]}
-                  hrefParts={["mail", "to:b", "ena@pdf", "-4all.de"]}
+                  textParts={["info", "@pdf", "-4all", ".de"]}
+                  hrefParts={["mail", "to:i", "nfo@pdf", "-4all.de"]}
                   className="hover:text-white transition-colors"
                 />
               </li>
