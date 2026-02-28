@@ -45,7 +45,7 @@ export function LeadMagnet() {
       <div className="max-w-2xl mx-auto px-4 text-center">
         <RevealOnScroll>
           <Download className="w-10 h-10 mx-auto mb-4 text-[#d97706]" />
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-3 uppercase">
             {leadMagnetContent.title}
           </h2>
           <p className="text-white/80 leading-relaxed mb-8">
