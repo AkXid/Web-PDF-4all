@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     locale: "de_DE",
     // OG-Bild wird automatisch via app/opengraph-image.tsx generiert
   },
+  verification: {
+    google: "4PBZf0hUZ6IE_bivPSVsCTyVl3Jf-yI4NAREY5ktm-4",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
