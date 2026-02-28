@@ -26,7 +26,7 @@ export default function DatenschutzPage() {
             Autónomo (Einzelunternehmer)<br />
             Calle Bilbao 7<br />
             03170 Rojales, España<br />
-            E-Mail: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
+            E-Mail: <ProtectedText parts={["info", "@pdf", "-4all", ".de"]} />
           </p>
 
           {/* 2. Grundsätze */}
@@ -67,6 +67,28 @@ export default function DatenschutzPage() {
             <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
               target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
               GitHub Datenschutz
+            </a>
+          </p>
+
+          <p><strong>3c. Vercel Analytics (Webanalyse)</strong></p>
+          <p>
+            Diese Website nutzt <strong>Vercel Analytics</strong>, einen datenschutzfreundlichen
+            Analysedienst der Vercel, Inc. (340 S Lemon Ave #4133, Walnut, CA 91789, USA).
+            Vercel Analytics arbeitet <strong>ohne Cookies</strong> und ohne persistente
+            Identifikatoren. Es werden ausschließlich aggregierte, nicht personenbezogene
+            Messwerte erfasst, darunter Seitenaufrufe, ungefähre Herkunftsregion (auf
+            Länderebene), Gerätekategorie, Browsertyp sowie Core Web Vitals
+            (Ladezeit, Layoutstabilität).
+          </p>
+          <p>
+            Eine Zuordnung dieser Daten zu einzelnen Personen ist nicht möglich und nicht
+            beabsichtigt. Eine Einwilligung (Cookie-Banner) ist daher nicht erforderlich.
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
+            Verbesserung der Website-Performance und Nutzerfreundlichkeit). Vercel ist unter
+            dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen:{" "}
+            <a href="https://vercel.com/docs/analytics/privacy-policy"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              Vercel Analytics Datenschutz
             </a>
           </p>
 
@@ -146,7 +168,8 @@ export default function DatenschutzPage() {
             ePrivacy-Richtlinie nicht erforderlich.
           </p>
           <p>
-            Es werden derzeit keine Analyse-, Marketing- oder Tracking-Cookies verwendet.
+            Es werden keine Analyse-, Marketing- oder Tracking-Cookies verwendet. Der eingesetzte
+            Analysedienst Vercel Analytics arbeitet vollständig ohne Cookies (siehe Abschnitt 3c).
           </p>
 
           {/* 9. Ihre Rechte */}
@@ -162,7 +185,7 @@ export default function DatenschutzPage() {
             <li><strong>Widerruf</strong> (Art. 7 DSGVO): Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</li>
           </ul>
           <p className="mt-2">
-            Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
+            Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <ProtectedText parts={["info", "@pdf", "-4all", ".de"]} />
           </p>
 
           {/* 10. Beschwerderecht */}

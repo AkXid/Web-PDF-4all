@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingCTA } from "@/components/shared/FloatingCTA";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { siteConfig } from "@/lib/config";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const fontSans = localFont({
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingCTA />
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   );
