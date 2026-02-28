@@ -17,7 +17,7 @@ export default function ImpressumPage() {
             Angaben gemäß Art. 10 LSSI-CE (Ley 34/2002)
           </h2>
           <p>
-            <strong>Name:</strong> [Vorname Nachname]<br />
+            <strong>Name:</strong> Dragan Bena<br />
             <strong>Rechtsform:</strong> Autónomo (Einzelunternehmer)<br />
             <strong>Steueridentifikationsnummer (NIF):</strong> [NIF eintragen]<br />
             <strong>Eingetragene Adresse:</strong><br />
@@ -29,7 +29,7 @@ export default function ImpressumPage() {
           {/* Kontakt */}
           <h2 className="text-lg font-bold text-slate-900 mt-8">Kontakt</h2>
           <p>
-            <strong>Telefon:</strong> [Telefonnummer]<br />
+            <strong>Telefon:</strong> +34 68575707<br />
             <strong>E-Mail:</strong> bena@pdf-4all.de
           </p>
 

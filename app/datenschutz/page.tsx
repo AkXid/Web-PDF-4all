@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
             spanischen Datenschutzgesetzes (LOPDGDD, Ley Orgánica 3/2018) ist:
           </p>
           <p>
-            [Vorname Nachname]<br />
+            Dragan Bena<br />
             Autónomo (Einzelunternehmer)<br />
             [Straße und Hausnummer]<br />
             [PLZ] [Stadt], España<br />

@@ -18,7 +18,7 @@ export default function AGBPage() {
           <h2 className="text-lg font-bold text-slate-900 mt-8">§ 1 Geltungsbereich</h2>
           <p>
             Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen
-            [Vorname Nachname], tätig als Autónomo (Einzelunternehmer) mit Sitz in Spanien
+            Dragan Bena, tätig als Autónomo (Einzelunternehmer) mit Sitz in Spanien
             (nachfolgend „Auftragnehmer"), und dem jeweiligen Auftraggeber über Dienstleistungen
             im Bereich der digitalen Barrierefreiheit, insbesondere PDF/UA-Konvertierung,
             Dokumentenremediatierung, Alternativtexte, Formular-Barrierefreiheit sowie
