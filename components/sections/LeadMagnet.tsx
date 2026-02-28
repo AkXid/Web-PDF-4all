@@ -8,11 +8,23 @@ export function LeadMagnet() {
   const [vorname, setVorname] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   if (siteConfig.features.leadMagnet === "none" || !siteConfig.features.leadMagnet) return null;
 
+  function isValidEmail(email: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setErrorMsg("");
+
+    if (!isValidEmail(email)) {
+      setErrorMsg("Bitte gib eine gültige E-Mail-Adresse ein.");
+      return;
+    }
+
     setStatus("loading");
 
     const res = await fetch("/api/subscribe", {
@@ -71,7 +83,10 @@ export function LeadMagnet() {
             </form>
           )}
 
-          {status === "error" && (
+          {errorMsg && (
+            <p className="mt-3 text-red-300 text-sm">{errorMsg}</p>
+          )}
+          {status === "error" && !errorMsg && (
             <p className="mt-3 text-red-300 text-sm">Etwas ist schiefgelaufen. Bitte versuche es erneut.</p>
           )}
         </RevealOnScroll>
