@@ -100,7 +100,7 @@ leistungen:
       - titel: "Detaillierter Prüfbericht"
         text: "Sie erhalten einen strukturierten Bericht mit allen Befunden und Prioritäten."
       - titel: "PAC & manuelle Prüfung"
-        text: "Kombination aus automatisierten Tools (PAC Accessibility Checker 2026) und manueller Sichtprüfung."
+        text: "Kombination aus automatisierten Tools (PAC (PDF Accessibility Checker)) und manueller Sichtprüfung."
       - titel: "Normreferenzen"
         text: "Jeder Befund wird einer konkreten Norm (PDF/UA, WCAG) zugeordnet."
     seo_title: "Barrierefreiheitsprüfung für PDFs und Dokumente"
@@ -225,7 +225,7 @@ faqs:
     antwort: "Die Kosten richten sich nach Seitenanzahl und Komplexität des Dokuments. Ich erstelle Ihnen vorab ein transparentes Festpreisangebot – kontaktieren Sie mich einfach mit Ihrem Dokument."
 
   - frage: "Kann ich die Barrierefreiheit meiner PDFs selbst prüfen?"
-    antwort: "Mit kostenlosen Tools wie PAC Accessibility Checker 2026 können Sie einen ersten Schnellcheck durchführen. Allerdings erkennen automatische Tools nur rund 30 % der tatsächlichen Barrierefreiheitsprobleme – eine manuelle Prüfung ist unerlässlich."
+    antwort: "Mit kostenlosen Tools wie PAC (PDF Accessibility Checker) können Sie einen ersten Schnellcheck durchführen. Allerdings erkennen automatische Tools nur rund 30 % der tatsächlichen Barrierefreiheitsprobleme – eine manuelle Prüfung ist unerlässlich."
 
   - frage: "Arbeiten Sie auch mit Agenturen und Freelancern zusammen?"
     antwort: "Ja, ich biete auch White-Label-Kooperationen für Agenturen und Grafikbüros an. Wenn Sie PDF/UA als Leistung anbieten möchten, ohne selbst die Expertise aufzubauen, sprechen Sie mich gerne an."
