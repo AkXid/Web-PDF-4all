@@ -155,7 +155,7 @@ export const faqs = [
   },
   {
     question: "Kann ich die Barrierefreiheit meiner PDFs selbst prüfen?",
-    answer: "Mit kostenlosen Tools wie PAC 2024 können Sie einen ersten Schnellcheck durchführen. Allerdings erkennen automatische Tools nur rund 30 % der tatsächlichen Barrierefreiheitsprobleme – eine manuelle Prüfung ist unerlässlich.",
+    answer: "Mit kostenlosen Tools wie PAC Accessibility Checker 2026 können Sie einen ersten Schnellcheck durchführen. Allerdings erkennen automatische Tools nur rund 30 % der tatsächlichen Barrierefreiheitsprobleme – eine manuelle Prüfung ist unerlässlich.",
   },
   {
     question: "Arbeiten Sie auch mit Agenturen und Freelancern zusammen?",
