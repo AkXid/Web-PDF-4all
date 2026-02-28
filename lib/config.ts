@@ -37,7 +37,7 @@ export const siteConfig: SiteConfig = {
     owner: "Dragan Bena",
     claim: "Ihr Spezialist für barrierefreie PDF-Dokumente",
     foundedYear: 2014,
-    phone: "+34 68575707",
+    phone: "+34 685 753 707",
     email: "info@pdf-4all.de",
     emailContact: "bena@pdf-4all.de",
     address: { street: "[Straße]", zip: "[PLZ]", city: "[Ort]" },

@@ -205,8 +205,8 @@ export default function KontaktPage() {
                   <div>
                     <p className="font-medium text-slate-900">Telefon</p>
                     <ProtectedLink
-                      textParts={["+34", " 685", "75", "707"]}
-                      hrefParts={["tel", ":+34", "685", "75707"]}
+                      textParts={["+34", " 685", " 753", " 707"]}
+                      hrefParts={["tel:+34", "685", "753", "707"]}
                       className="hover:text-[#1a365d]"
                     />
                   </div>

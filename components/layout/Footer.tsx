@@ -79,8 +79,8 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
                 <ProtectedLink
-                  textParts={["+34", " 685", "75", "707"]}
-                  hrefParts={["tel", ":+34", "685", "75707"]}
+                  textParts={["+34", " 685", " 753", " 707"]}
+                  hrefParts={["tel:+34", "685", "753", "707"]}
                   className="hover:text-white transition-colors"
                 />
               </li>

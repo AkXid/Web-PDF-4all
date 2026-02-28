@@ -30,7 +30,7 @@ export default function ImpressumPage() {
           {/* Kontakt */}
           <h2 className="text-lg font-bold text-slate-900 mt-8">Kontakt</h2>
           <p>
-            <strong>Telefon:</strong> <ProtectedText parts={["+34", " 685", "75", "707"]} /><br />
+            <strong>Telefon:</strong> <ProtectedText parts={["+34", " 685", " 753", " 707"]} /><br />
             <strong>E-Mail:</strong> <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
