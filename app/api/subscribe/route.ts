@@ -10,7 +10,8 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const response = await fetch("https://api.brevo.com/v3/contacts/doubleOptinConfirmation", {
+    // Schritt 1: Kontakt in Brevo speichern
+    const contactResponse = await fetch("https://api.brevo.com/v3/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,17 +20,35 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         email,
         attributes: { VORNAME: vorname || "" },
-        templateId: 14,
-        redirectionUrl: "https://kdrive.infomaniak.com/app/share/446193/70787b0b-1dfe-497f-96c2-e2acc90792c2",
-        includeListIds: [5],
-        includeListIdsAfterValidation: [5],
+        listIds: [5],
+        updateEnabled: true,
       }),
     });
 
-    if (!response.ok) {
-      const error = await response.json();
-      console.error("Brevo error:", JSON.stringify(error));
-      return NextResponse.json({ error }, { status: response.status });
+    if (!contactResponse.ok) {
+      const error = await contactResponse.json();
+      console.error("Brevo contact error:", JSON.stringify(error));
+      return NextResponse.json({ error }, { status: contactResponse.status });
+    }
+
+    // Schritt 2: Template #1 "2.PDF jetzt ansehen" direkt verschicken
+    const emailResponse = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-key": process.env.BREVO_API_KEY!,
+      },
+      body: JSON.stringify({
+        templateId: 1,
+        to: [{ email, name: vorname || "" }],
+        params: { VORNAME: vorname || "" },
+      }),
+    });
+
+    if (!emailResponse.ok) {
+      const error = await emailResponse.json();
+      console.error("Brevo email error:", JSON.stringify(error));
+      return NextResponse.json({ error }, { status: emailResponse.status });
     }
 
     return NextResponse.json({ success: true });
