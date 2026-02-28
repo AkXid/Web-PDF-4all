@@ -4,7 +4,7 @@ import { services } from "@/lib/services-data";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.pdf-barrierefrei.de";
+  const baseUrl = "https://www.pdf-4all.de";
 
   const servicePages = services.map((s) => ({
     url: `${baseUrl}/leistungen/${s.slug}`,
