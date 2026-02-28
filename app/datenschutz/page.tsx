@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProtectedText } from "@/components/shared/ProtectedText";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung / Política de Privacidad",
@@ -21,11 +22,11 @@ export default function DatenschutzPage() {
             spanischen Datenschutzgesetzes (LOPDGDD, Ley Orgánica 3/2018) ist:
           </p>
           <p>
-            Dragan Bena<br />
+            <ProtectedText parts={["Drag", "an ", "Bena"]} /><br />
             Autónomo (Einzelunternehmer)<br />
             [Straße und Hausnummer]<br />
             [PLZ] [Stadt], España<br />
-            E-Mail: bena@pdf-4all.de
+            E-Mail: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
           {/* 2. Grundsätze */}
@@ -161,7 +162,7 @@ export default function DatenschutzPage() {
             <li><strong>Widerruf</strong> (Art. 7 DSGVO): Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</li>
           </ul>
           <p className="mt-2">
-            Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: bena@pdf-4all.de
+            Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
           {/* 10. Beschwerderecht */}

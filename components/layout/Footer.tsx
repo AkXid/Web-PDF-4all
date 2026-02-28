@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, Clock, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/config";
+import { ProtectedLink } from "@/components/shared/ProtectedText";
 import { services } from "@/lib/services-data";
 
 export function Footer() {
@@ -67,21 +68,19 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                <a
-                  href={`mailto:${siteConfig.company.email}`}
+                <ProtectedLink
+                  textParts={["bena", "@pdf", "-4all", ".de"]}
+                  hrefParts={["mail", "to:b", "ena@pdf", "-4all.de"]}
                   className="hover:text-white transition-colors"
-                >
-                  {siteConfig.company.email}
-                </a>
+                />
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                <a
-                  href={`tel:${siteConfig.company.phone.replace(/\s/g, "")}`}
+                <ProtectedLink
+                  textParts={["+34", " 685", "75", "707"]}
+                  hrefParts={["tel", ":+34", "685", "75707"]}
                   className="hover:text-white transition-colors"
-                >
-                  {siteConfig.company.phone}
-                </a>
+                />
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" />

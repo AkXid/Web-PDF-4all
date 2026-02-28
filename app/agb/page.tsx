@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProtectedText } from "@/components/shared/ProtectedText";
 
 export const metadata: Metadata = {
   title: "Allgemeine Geschäftsbedingungen",
@@ -18,7 +19,7 @@ export default function AGBPage() {
           <h2 className="text-lg font-bold text-slate-900 mt-8">§ 1 Geltungsbereich</h2>
           <p>
             Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen
-            Dragan Bena, tätig als Autónomo (Einzelunternehmer) mit Sitz in Spanien
+            <ProtectedText parts={["Drag", "an ", "Bena"]} />, tätig als Autónomo (Einzelunternehmer) mit Sitz in Spanien
             (nachfolgend „Auftragnehmer"), und dem jeweiligen Auftraggeber über Dienstleistungen
             im Bereich der digitalen Barrierefreiheit, insbesondere PDF/UA-Konvertierung,
             Dokumentenremediatierung, Alternativtexte, Formular-Barrierefreiheit sowie

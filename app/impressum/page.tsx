@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProtectedText, ProtectedLink } from "@/components/shared/ProtectedText";
 
 export const metadata: Metadata = { title: "Impressum / Aviso Legal" };
 
@@ -17,9 +18,9 @@ export default function ImpressumPage() {
             Angaben gemäß Art. 10 LSSI-CE (Ley 34/2002)
           </h2>
           <p>
-            <strong>Name:</strong> Dragan Bena<br />
+            <strong>Name:</strong> <ProtectedText parts={["Drag", "an ", "Bena"]} /><br />
             <strong>Rechtsform:</strong> Autónomo (Einzelunternehmer)<br />
-            <strong>Steueridentifikationsnummer (NIF):</strong> [NIF eintragen]<br />
+            <strong>Steueridentifikationsnummer (NIF):</strong> <ProtectedText parts={["[NIF", " ein", "tragen]"]} /><br />
             <strong>Eingetragene Adresse:</strong><br />
             [Straße und Hausnummer]<br />
             [PLZ] [Stadt]<br />
@@ -29,8 +30,8 @@ export default function ImpressumPage() {
           {/* Kontakt */}
           <h2 className="text-lg font-bold text-slate-900 mt-8">Kontakt</h2>
           <p>
-            <strong>Telefon:</strong> +34 68575707<br />
-            <strong>E-Mail:</strong> bena@pdf-4all.de
+            <strong>Telefon:</strong> <ProtectedText parts={["+34", " 685", "75", "707"]} /><br />
+            <strong>E-Mail:</strong> <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
           {/* Berufliche Tätigkeit */}
@@ -43,8 +44,8 @@ export default function ImpressumPage() {
           {/* Steuerliche Angaben */}
           <h2 className="text-lg font-bold text-slate-900 mt-8">Steuerliche Angaben</h2>
           <p>
-            <strong>Spanische NIF:</strong> [NIF eintragen]<br />
-            <strong>EU-Umsatzsteuer-Identifikationsnummer (VAT-ID):</strong> ES[NIF eintragen]
+            <strong>Spanische NIF:</strong> <ProtectedText parts={["[NIF", " ein", "tragen]"]} /><br />
+            <strong>EU-Umsatzsteuer-Identifikationsnummer (VAT-ID):</strong> <ProtectedText parts={["ES", "[NIF", " ein", "tragen]"]} />
           </p>
           <p>
             Als in Spanien ansässiger Autónomo unterliege ich der spanischen Steuerpflicht.

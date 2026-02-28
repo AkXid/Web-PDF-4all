@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/lib/config";
 import { services } from "@/lib/services-data";
 import { Phone, Mail, Clock, Send } from "lucide-react";
+import { ProtectedLink } from "@/components/shared/ProtectedText";
 
 // ⚠️  FORMSPREE: Deine Form-ID hier eintragen!
 // 1. Geh auf https://formspree.io und erstelle ein neues Formular
@@ -203,18 +204,22 @@ export default function KontaktPage() {
                   <Phone className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
                   <div>
                     <p className="font-medium text-slate-900">Telefon</p>
-                    <a href={`tel:${siteConfig.company.phone.replace(/\s/g, "")}`} className="hover:text-[#1a365d]">
-                      {siteConfig.company.phone}
-                    </a>
+                    <ProtectedLink
+                      textParts={["+34", " 685", "75", "707"]}
+                      hrefParts={["tel", ":+34", "685", "75707"]}
+                      className="hover:text-[#1a365d]"
+                    />
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
                   <div>
                     <p className="font-medium text-slate-900">E-Mail</p>
-                    <a href={`mailto:${siteConfig.company.email}`} className="hover:text-[#1a365d]">
-                      {siteConfig.company.email}
-                    </a>
+                    <ProtectedLink
+                      textParts={["bena", "@pdf", "-4all", ".de"]}
+                      hrefParts={["mail", "to:b", "ena@pdf", "-4all.de"]}
+                      className="hover:text-[#1a365d]"
+                    />
                   </div>
                 </li>
 <li className="flex items-start gap-3">
