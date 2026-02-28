@@ -39,14 +39,7 @@ export const metadata: Metadata = {
     description: siteConfig.seo.description,
     type: "website",
     locale: "de_DE",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: siteConfig.company.name,
-      },
-    ],
+    // OG-Bild wird automatisch via app/opengraph-image.tsx generiert
   },
 };
 

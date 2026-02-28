@@ -55,7 +55,7 @@ export const siteConfig: SiteConfig = {
   },
   seo: {
     title: "PDF-4all – Ihr Spezialist für barrierefreie Dokumente",
-    description: "Professionelle Erstellung und Prüfung barrierefreier PDF-Dokumente nach PDF/UA und WCAG 2.1. BFSG-konform. Deutschlandweit.",
+    description: "Professionelle Erstellung und Prüfung barrierefreier PDF-Dokumente nach PDF/UA-1 (ISO 14289-1) Standard. BFSG-konform.",
     keywords: ["PDF/UA", "barrierefreie PDFs", "Barrierefreiheit", "BFSG", "WCAG", "PDF barrierefrei"],
   },
   features: {
