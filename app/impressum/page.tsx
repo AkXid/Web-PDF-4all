@@ -20,10 +20,10 @@ export default function ImpressumPage() {
           <p>
             <strong>Name:</strong> <ProtectedText parts={["Drag", "an ", "Bena"]} /><br />
             <strong>Rechtsform:</strong> Autónomo (Einzelunternehmer)<br />
-            <strong>Steueridentifikationsnummer (NIF):</strong> <ProtectedText parts={["[NIF", " ein", "tragen]"]} /><br />
+            <strong>Steueridentifikationsnummer (NIF):</strong> <ProtectedText parts={["X42", "566", "83G"]} /><br />
             <strong>Eingetragene Adresse:</strong><br />
-            [Straße und Hausnummer]<br />
-            [PLZ] [Stadt]<br />
+            Calle Bilbao 7<br />
+            03170 Rojales<br />
             España / Spanien
           </p>
 
@@ -38,14 +38,14 @@ export default function ImpressumPage() {
           <h2 className="text-lg font-bold text-slate-900 mt-8">Berufliche Tätigkeit</h2>
           <p>
             Dienstleister für digitale Barrierefreiheit / PDF/UA-Spezialist<br />
-            Zertifizierung: PDF/UA Accessibility Senior Specialist
+            PDF/UA Accessibility Senior Specialist
           </p>
 
           {/* Steuerliche Angaben */}
           <h2 className="text-lg font-bold text-slate-900 mt-8">Steuerliche Angaben</h2>
           <p>
-            <strong>Spanische NIF:</strong> <ProtectedText parts={["[NIF", " ein", "tragen]"]} /><br />
-            <strong>EU-Umsatzsteuer-Identifikationsnummer (VAT-ID):</strong> <ProtectedText parts={["ES", "[NIF", " ein", "tragen]"]} />
+            <strong>Spanische NIF:</strong> <ProtectedText parts={["X42", "566", "83G"]} /><br />
+            <strong>EU-Umsatzsteuer-Identifikationsnummer (VAT-ID):</strong> <ProtectedText parts={["ES", "X42", "566", "83G"]} />
           </p>
           <p>
             Als in Spanien ansässiger Autónomo unterliege ich der spanischen Steuerpflicht.
