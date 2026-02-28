@@ -221,7 +221,7 @@ faqs:
   - frage: "Wie lange dauert die Konvertierung eines Dokuments?"
     antwort: "Die Bearbeitungszeit hängt vom Umfang und der Komplexität des Dokuments ab. Einfache Dokumente sind oft in 1–3 Werktagen fertig. Für umfangreiche Dokumente erhalten Sie vorab eine realistische Zeitschätzung."
 
-  - frage: "Was kostet die Barrierefreiheitsprüfung eines Dokuments?"
+  - frage: "Was kostet die Barrierefreiheitserstellung eines Dokuments?"
     antwort: "Die Kosten richten sich nach Seitenanzahl und Komplexität des Dokuments. Ich erstelle Ihnen vorab ein transparentes Festpreisangebot – kontaktieren Sie mich einfach mit Ihrem Dokument."
 
   - frage: "Kann ich die Barrierefreiheit meiner PDFs selbst prüfen?"
