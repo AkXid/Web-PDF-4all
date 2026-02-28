@@ -12,10 +12,7 @@ import { services } from "@/lib/services-data";
 import { Phone, Mail, Clock, Send } from "lucide-react";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 
-// ⚠️  FORMSPREE: Deine Form-ID hier eintragen!
-// 1. Geh auf https://formspree.io und erstelle ein neues Formular
-// 2. Ersetze "DEINE_FORM_ID" mit deiner echten ID (z.B. "xpwzabcd")
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/DEINE_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xgolqgpd";
 
 const contactSchema = z.object({
   anrede: z.string().min(1, "Bitte wählen Sie eine Anrede"),
