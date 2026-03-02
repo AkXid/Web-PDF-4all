@@ -33,7 +33,7 @@ export function Footer() {
             )}
             {/* LinkedIn Icon – Link wird noch ergänzt */}
             <a
-              href="https://www.linkedin.com/in/draga-bena"
+              href="https://www.linkedin.com/in/dragan-bena"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Dragan Bena auf LinkedIn"
