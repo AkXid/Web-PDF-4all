@@ -21,7 +21,7 @@ export function LeadMagnet() {
     setErrorMsg("");
 
     if (!isValidEmail(email)) {
-      setErrorMsg("Bitte gib eine gültige E-Mail-Adresse ein.");
+      setErrorMsg("Bitte geben Sie eine gültige E-Mail-Adresse ein.");
       return;
     }
 
@@ -54,7 +54,7 @@ export function LeadMagnet() {
 
           {status === "success" ? (
             <div className="bg-white/10 rounded-md px-6 py-4 text-white text-lg font-medium">
-              ✅ Fast geschafft! Bitte prüfe deine E-Mail und bestätige deine Anmeldung.
+              ✅ Fast geschafft! Bitte prüfen Sie Ihre E-Mail und bestätigen Sie Ihre Anmeldung.
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 justify-center mx-auto">
@@ -87,7 +87,7 @@ export function LeadMagnet() {
             <p className="mt-3 text-red-300 text-sm">{errorMsg}</p>
           )}
           {status === "error" && !errorMsg && (
-            <p className="mt-3 text-red-300 text-sm">Etwas ist schiefgelaufen. Bitte versuche es erneut.</p>
+            <p className="mt-3 text-red-300 text-sm">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</p>
           )}
 
           {/* Sekundärer CTA – BFSG-Check */}
@@ -98,7 +98,7 @@ export function LeadMagnet() {
           </div>
           <div className="mt-6">
             <p className="text-white/70 text-sm mb-3">
-              Finde in 2 Minuten heraus, ob dein Unternehmen betroffen ist.
+              Finden Sie in 2 Minuten heraus, ob Ihr Unternehmen betroffen ist.
             </p>
             <a
               href="/bfsg-check"

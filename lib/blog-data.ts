@@ -48,7 +48,7 @@ Ist das BFSG ein bürokratisches Monstrum? Für viele kleine Unternehmen: nein, 
 
 Das Gesetz hat einen sinnvollen Kern. Menschen mit Behinderungen – rund 135 Millionen in der EU – sollen digitale Inhalte genauso nutzen können wie alle anderen. Das ist kein unrealistisches Ziel.
 
-Willst du wissen ob deine Dokumente betroffen sind? Melde dich gerne – ein kurzer Check zeigt dir wo du stehst.`,
+Möchten Sie wissen, ob Ihre Dokumente betroffen sind? Melden Sie sich gerne – ein kurzer Check zeigt Ihnen, wo Sie stehen.`,
   },
 ];
 

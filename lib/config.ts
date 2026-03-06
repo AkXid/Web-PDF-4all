@@ -106,8 +106,8 @@ export const heroContent = {
 
 export const leadMagnetContent = {
   type: "checklist",
-  title: "Dein kostenloser BFSG-Leitfaden",
-  subtitle: "Verstehen, ob dein Unternehmen betroffen ist – und was du konkret tun musst.",
+  title: "Ihr kostenloser BFSG-Leitfaden",
+  subtitle: "Verstehen, ob Ihr Unternehmen betroffen ist – und was Sie konkret tun müssen.",
   cta: "Leitfaden kostenlos herunterladen",
   description: "Prüfen Sie in 5 Minuten, ob Ihre PDFs die wichtigsten Barrierefreiheitsanforderungen erfüllen.",
 };
