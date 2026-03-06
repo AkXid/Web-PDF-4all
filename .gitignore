@@ -25,3 +25,7 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# AI assistant files (local only)
+CLAUDE.md
+AGENTS.md
