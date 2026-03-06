@@ -89,6 +89,27 @@ export function LeadMagnet() {
           {status === "error" && !errorMsg && (
             <p className="mt-3 text-red-300 text-sm">Etwas ist schiefgelaufen. Bitte versuche es erneut.</p>
           )}
+
+          {/* Sekundärer CTA – BFSG-Check */}
+          <div className="mt-8 flex items-center gap-4">
+            <div className="flex-1 border-t border-white/20" />
+            <span className="text-white/50 text-sm shrink-0">oder</span>
+            <div className="flex-1 border-t border-white/20" />
+          </div>
+          <div className="mt-6">
+            <p className="text-white/70 text-sm mb-3">
+              Finde in 2 Minuten heraus, ob dein Unternehmen betroffen ist.
+            </p>
+            <a
+              href="/bfsg-check"
+              className="inline-flex items-center gap-2 border-2 border-white/40 hover:border-white text-white font-semibold px-5 py-2 rounded-md transition-colors"
+            >
+              BFSG-Check starten
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </RevealOnScroll>
       </div>
     </section>

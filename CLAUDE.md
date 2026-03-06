@@ -11,7 +11,7 @@ Für Seitenstruktur, Design und technische Anforderungen: siehe `docs/ANFORDERUN
 - Tailwind CSS 4
 - shadcn/ui (alle UI-Elemente)
 - Framer Motion 12 (Animationen)
-- **GitHub Pages** (statischer Export – kein Vercel, kein Server-Rendering)
+- **Vercel** (Server-Rendering, API routes aktiv – kein `output: 'export'`!)
 
 ## Goldene Regeln
 
@@ -23,7 +23,7 @@ Für Seitenstruktur, Design und technische Anforderungen: siehe `docs/ANFORDERUN
 6. **Deutsche Texte**, DSGVO-konform, Sie-Form (kein "Du")
 7. **Bilder via `next/image`** mit `priority` für Above-the-Fold
 8. **Einzelunternehmen**: "Ich/mein" statt "Wir/unser" in allen Texten
-9. **`output: 'export'`** in `next.config.ts` – Pflicht für GitHub Pages
+9. **Kein `output: 'export'`** – Vercel-Hosting, API routes funktionieren
 
 ## Dauerhaft deaktivierte Features
 
@@ -75,6 +75,13 @@ lib/
   services-data.ts            → Leistungsdaten
   utils.ts                    → Hilfsfunktionen
 ```
+
+## Deployment & Dienste
+- **Live-URL:** https://www.pdf-4all.de (Vercel-Projekt: `web-pdf-4all`)
+- **Formspree-ID:** `xgolqgpd` → Endpoint: `https://formspree.io/f/xgolqgpd`
+- **Google Search Console:** verifiziert (code in `layout.tsx` `verification.google`), sitemap eingereicht
+- **OG-Image:** `app/opengraph-image.tsx` – runtime MUSS `nodejs` sein (nicht `edge`), Logo: `public/og-logo.png`
+- **Satori-Gotcha:** Sonderzeichen wie ✓ werden in OG-Images nicht gerendert – vermeiden
 
 ## Referenzen
 - Branche & Inhalte: [docs/BRANCHE.md](docs/BRANCHE.md)

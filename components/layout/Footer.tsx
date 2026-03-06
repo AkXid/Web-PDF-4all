@@ -60,6 +60,15 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="border-t border-slate-700 mt-4 pt-4">
+              <p className="text-xs uppercase tracking-wider text-slate-500 mb-2">Tools</p>
+              <Link
+                href="/bfsg-check"
+                className="text-sm text-slate-400 hover:text-white transition-colors"
+              >
+                BFSG-Check
+              </Link>
+            </div>
           </div>
 
           {/* Contact */}
