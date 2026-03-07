@@ -157,23 +157,88 @@ export default function DatenschutzPage() {
             und ohne automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO.
           </p>
 
-          {/* 8. Cookies */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">8. Cookies</h2>
+          {/* 8. Cookies und Consent-Management */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">8. Cookies und Consent-Management – Cookiebot</h2>
 
           <p>
-            Diese Website verwendet ausschließlich technisch notwendige Cookies, die für den
-            ordnungsgemäßen Betrieb der Website erforderlich sind. Diese Cookies speichern keine
-            personenbezogenen Daten und werden nicht für Tracking- oder Werbezwecke eingesetzt.
-            Eine Einwilligung ist für technisch notwendige Cookies gemäß Art. 5 Abs. 3 der
-            ePrivacy-Richtlinie nicht erforderlich.
+            Diese Website verwendet Cookies. Beim ersten Besuch erscheint ein Cookie-Banner, über
+            das Sie Ihre Einwilligung für die verschiedenen Cookie-Kategorien erteilen oder
+            verweigern können. Technisch notwendige Cookies werden ohne Einwilligung gesetzt;
+            alle anderen Cookies werden erst nach Ihrer ausdrücklichen Einwilligung aktiviert.
           </p>
           <p>
-            Es werden keine Analyse-, Marketing- oder Tracking-Cookies verwendet. Der eingesetzte
-            Analysedienst Vercel Analytics arbeitet vollständig ohne Cookies (siehe Abschnitt 3c).
+            Das Cookie-Consent-Management wird durch <strong>Cookiebot</strong> bereitgestellt,
+            einem Dienst der <strong>Usercentrics A/S</strong>, Havnegade 39, 1058 Kopenhagen,
+            Dänemark. Cookiebot dokumentiert und verwaltet Ihre Einwilligungsentscheidung und
+            speichert diese in einem Cookie (<code>CookieConsent</code>) in Ihrem Browser, damit
+            Ihre Präferenz bei erneuten Besuchen erhalten bleibt.
+          </p>
+          <p>
+            Rechtsgrundlage für den Einsatz von Cookiebot ist Art. 6 Abs. 1 lit. c DSGVO
+            (Erfüllung der rechtlichen Verpflichtung zur Einholungs- und Nachweispflicht gemäß
+            Art. 7 DSGVO) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
+            rechtskonformen Gestaltung der Website). Weitere Informationen:{" "}
+            <a href="https://www.cookiebot.com/de/privacy-policy/"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              Datenschutzrichtlinie Cookiebot
+            </a>
           </p>
 
-          {/* 9. Ihre Rechte */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">9. Ihre Rechte als betroffene Person</h2>
+          {/* 9. Google Tag Manager */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">9. Google Tag Manager</h2>
+
+          <p>
+            Diese Website verwendet den <strong>Google Tag Manager</strong> (Container-ID:
+            GTM-PZ867C2K), einen Tag-Management-Dienst der <strong>Google Ireland Limited</strong>,
+            Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager selbst
+            verarbeitet keine personenbezogenen Daten und setzt keine Cookies. Er dient
+            ausschließlich der technischen Verwaltung und dem Laden der auf dieser Website
+            eingesetzten Skripte (z. B. Google Analytics 4).
+          </p>
+          <p>
+            Die über den Google Tag Manager eingebundenen Dienste unterliegen den in den
+            jeweiligen Abschnitten dieser Datenschutzerklärung beschriebenen Datenschutzregelungen.
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
+            effizienten und datenschutzkonformen Tag-Verwaltung). Weitere Informationen:{" "}
+            <a href="https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              Google Tag Manager Nutzungsrichtlinien
+            </a>
+          </p>
+
+          {/* 10. Google Analytics 4 */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">10. Google Analytics 4</h2>
+
+          <p>
+            Diese Website nutzt <strong>Google Analytics 4</strong> (Mess-ID: G-LCNY3EQ0VN),
+            einen Webanalysedienst der <strong>Google Ireland Limited</strong>, Gordon House,
+            Barrow Street, Dublin 4, Irland. Google Analytics 4 wird über den Google Tag Manager
+            geladen und <strong>nur aktiviert, wenn Sie im Cookie-Banner der Kategorie
+            „Statistiken" zugestimmt haben</strong>.
+          </p>
+          <p>
+            Bei aktiviertem Google Analytics 4 werden Daten über Ihr Nutzungsverhalten auf dieser
+            Website erfasst (aufgerufene Seiten, Verweildauer, ungefährer Standort auf Länderebene,
+            Gerätetyp, Browsertyp). IP-Adressen werden von Google Analytics 4 standardmäßig
+            anonymisiert (IP-Masking). Die Daten werden auf Servern von Google in den USA
+            gespeichert. Google ist unter dem EU-US Data Privacy Framework zertifiziert, sodass
+            ein angemessenes Datenschutzniveau gewährleistet ist.
+          </p>
+          <p>
+            Google Analytics 4 setzt Cookies (<code>_ga</code>, <code>_ga_LCNY3EQ0VN</code>)
+            mit einer Laufzeit von bis zu 2 Jahren, um Nutzer über mehrere Sitzungen hinweg zu
+            unterscheiden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Sie
+            können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie
+            über den Cookie-Banner die Kategorie „Statistiken" deaktivieren. Weitere
+            Informationen:{" "}
+            <a href="https://policies.google.com/privacy"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              Google Datenschutzerklärung
+            </a>
+          </p>
+
+          {/* 11. Ihre Rechte */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">11. Ihre Rechte als betroffene Person</h2>
           <p>Gemäß DSGVO und LOPDGDD haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
           <ul className="list-disc pl-5 space-y-1 mt-2">
             <li><strong>Auskunft</strong> (Art. 15 DSGVO): Sie können Auskunft über die von mir gespeicherten Daten verlangen.</li>
@@ -188,8 +253,8 @@ export default function DatenschutzPage() {
             Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
-          {/* 10. Beschwerderecht */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">10. Beschwerderecht bei der Aufsichtsbehörde</h2>
+          {/* 12. Beschwerderecht */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">12. Beschwerderecht bei der Aufsichtsbehörde</h2>
           <p>
             Sie haben das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.
             Als in Spanien ansässiger Verantwortlicher ist die zuständige Behörde:
@@ -208,23 +273,23 @@ export default function DatenschutzPage() {
             zuständige deutsche Landesdatenschutzbehörde wenden.
           </p>
 
-          {/* 11. Datensicherheit */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">11. Datensicherheit</h2>
+          {/* 13. Datensicherheit */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">13. Datensicherheit</h2>
           <p>
             Diese Website nutzt aus Sicherheitsgründen eine SSL/TLS-Verschlüsselung. Eine
             verschlüsselte Verbindung erkennen Sie an dem „https://" in der Adresszeile Ihres
             Browsers. Übermittelte Daten können so nicht von Dritten mitgelesen werden.
           </p>
 
-          {/* 12. Aktualisierung */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">12. Aktualisierung dieser Datenschutzerklärung</h2>
+          {/* 14. Aktualisierung */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">14. Aktualisierung dieser Datenschutzerklärung</h2>
           <p>
             Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an
             geänderte Rechtslage oder Änderungen der Website anzupassen. Die jeweils aktuelle
             Version ist auf dieser Seite abrufbar.
           </p>
 
-          <p className="text-xs text-slate-400 mt-10">Stand: Februar 2026</p>
+          <p className="text-xs text-slate-400 mt-10">Stand: März 2026</p>
         </div>
       </div>
     </section>
