@@ -75,31 +75,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           });
         `}</Script>
 
-        {/* 2. Cookiebot – Cookie-Banner + aktualisiert Consent Mode */}
+        {/* 2. Cookiebot – Cookie-Banner + aktualisiert Consent Mode v2 */}
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="058f8bf7-da6b-4780-8552-20f1030e23e2"
-          data-blockingmode="auto"
           strategy="afterInteractive"
         />
 
-        {/* 3. Cookiebot Reload-Hook – lädt Seite einmalig neu wenn Consent geändert wurde,
-               damit GA4 und GTM beim ersten Consent-Klick korrekt feuern */}
-        <Script id="cookiebot-reload" strategy="afterInteractive">{`
-          window.addEventListener('CookiebotOnAccept', function() {
-            if (window.Cookiebot && window.Cookiebot.changed) {
-              window.location.reload();
-            }
-          });
-          window.addEventListener('CookiebotOnDecline', function() {
-            if (window.Cookiebot && window.Cookiebot.changed) {
-              window.location.reload();
-            }
-          });
-        `}</Script>
-
-        {/* 4. Google Tag Manager */}
+        {/* 3. Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
