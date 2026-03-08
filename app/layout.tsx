@@ -52,6 +52,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de" className={`${fontSans.variable} ${fontMono.variable}`}>
       <body className="font-sans">
+        {/* Skip-Link für Keyboard-Navigation */}
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:text-[#1a365d] focus:font-medium focus:shadow-lg"
+        >
+          Zum Hauptinhalt springen
+        </a>
+
         {/* GTM noscript – für Browser ohne JavaScript */}
         <noscript>
           <iframe
@@ -93,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
 
         <Header />
-        <main className="pt-16">{children}</main>
+        <main id="main" className="pt-16">{children}</main>
         <Footer />
         <FloatingCTA />
         <ScrollToTop />

@@ -31,9 +31,17 @@ function formatDate(dateStr: string): string {
   });
 }
 
+// HTML-Entities escapen, bevor Markdown verarbeitet wird
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 // Einfacher Markdown-zu-HTML Converter (ohne externe Abhängigkeiten)
 function renderMarkdown(content: string): string {
-  return content
+  return escapeHtml(content)
     // H2 Überschriften
     .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-slate-900 tracking-tight mt-10 mb-4">$1</h2>')
     // H3 Überschriften

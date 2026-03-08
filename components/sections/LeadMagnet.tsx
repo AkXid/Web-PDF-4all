@@ -58,21 +58,29 @@ export function LeadMagnet() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 justify-center mx-auto">
-              <input
-                type="text"
-                placeholder="Ihr Name"
-                value={vorname}
-                onChange={(e) => setVorname(e.target.value)}
-                className="w-36 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <input
-                type="email"
-                placeholder="Ihre E-Mail"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-40 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
-              />
+              <div>
+                <label htmlFor="leadmagnet-name" className="sr-only">Name</label>
+                <input
+                  id="leadmagnet-name"
+                  type="text"
+                  placeholder="Ihr Name"
+                  value={vorname}
+                  onChange={(e) => setVorname(e.target.value)}
+                  className="w-36 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              </div>
+              <div>
+                <label htmlFor="leadmagnet-email" className="sr-only">E-Mail</label>
+                <input
+                  id="leadmagnet-email"
+                  type="email"
+                  placeholder="Ihre E-Mail"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-40 px-4 py-2 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              </div>
               <button
                 type="submit"
                 disabled={status === "loading"}

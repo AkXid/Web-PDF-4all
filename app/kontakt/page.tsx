@@ -12,7 +12,7 @@ import { services } from "@/lib/services-data";
 import { Phone, Mail, Clock, Send } from "lucide-react";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xgolqgpd";
+const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "https://formspree.io/f/xgolqgpd";
 
 const contactSchema = z.object({
   anrede: z.string().min(1, "Bitte wählen Sie eine Anrede"),
