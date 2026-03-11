@@ -1,6 +1,7 @@
 "use client";
 
 import { RevealOnScroll } from "@/components/shared/RevealOnScroll";
+import { CardGridBackground } from "@/components/shared/CardGridBackground";
 import { Badge } from "@/components/ui/badge";
 import { Building2, Landmark, Users, Palette } from "lucide-react";
 
@@ -26,12 +27,13 @@ export function TargetAudience() {
         </RevealOnScroll>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {audiences.map((a) => (
+          {audiences.map((a, i) => (
             <RevealOnScroll key={a.label}>
-              <div className="bg-white border-2 border-transparent p-5 rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:border-[#1a365d]/40 transition-colors duration-300 shadow-sm hover:shadow-md">
-                <a.icon className="w-8 h-8 text-[#1a365d] mb-3" />
-                <h3 className="font-bold text-sm text-slate-900 mb-1">{a.label}</h3>
-                <p className="text-xs text-slate-500">{a.desc}</p>
+              <div className="relative border-2 border-transparent p-5 rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:border-[#1a365d]/40 transition-colors duration-300 shadow-sm hover:shadow-md overflow-hidden">
+                <CardGridBackground patternIndex={i} subtle />
+                <a.icon className="relative z-10 w-8 h-8 text-[#1a365d] mb-3" />
+                <h3 className="relative z-10 font-bold text-sm text-slate-900 mb-1">{a.label}</h3>
+                <p className="relative z-10 text-xs text-slate-500">{a.desc}</p>
               </div>
             </RevealOnScroll>
           ))}

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { RevealOnScroll } from "@/components/shared/RevealOnScroll";
+import { CardGridBackground } from "@/components/shared/CardGridBackground";
 import { stagger, fadeUp } from "@/lib/animations";
 import { services } from "@/lib/services-data";
 import { Tags, FormInput, Archive, ShieldCheck, ImageIcon, Handshake, FileCheck } from "lucide-react";
@@ -35,12 +36,13 @@ export function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
-          {services.map((service) => {
+          {services.map((service, i) => {
             const Icon = iconMap[service.icon] || FileCheck;
             return (
               <motion.div key={service.slug} variants={fadeUp}>
-                <Card className="border-2 border-transparent bg-white p-6 rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:border-[#1a365d]/40 transition-colors duration-300 group h-full shadow-sm hover:shadow-md">
-                  <CardHeader className="p-0 mb-4">
+                <Card className="relative border-2 border-transparent p-6 rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:border-[#1a365d]/40 transition-colors duration-300 group h-full shadow-sm hover:shadow-md overflow-hidden">
+                  <CardGridBackground patternIndex={i} />
+                  <CardHeader className="relative z-10 p-0 mb-4">
                     <div className="flex items-center justify-between mb-3">
                       <CardTitle className="text-xl font-bold text-slate-900">{service.title}</CardTitle>
                       <div className="w-11 h-11 flex items-center justify-center bg-transparent rounded-lg text-[#1a365d] transition-all duration-300 group-hover:bg-[#1a365d] group-hover:text-white group-hover:scale-110 flex-shrink-0 ml-3">
@@ -48,7 +50,7 @@ export function ServicesGrid() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-0">
+                  <CardContent className="relative z-10 p-0">
                     <p className="text-slate-600 leading-relaxed">{service.short}</p>
                     <Button variant="ghost" asChild className="mt-4 p-0 text-[#1a365d] group-hover:underline">
                       <Link href={`/leistungen/${service.slug}`}>Mehr erfahren →</Link>
