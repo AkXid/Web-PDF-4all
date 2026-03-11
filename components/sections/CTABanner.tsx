@@ -13,19 +13,11 @@ export function CTABanner() {
             Bereit für Ihr barrierefreies Dokument?
           </h2>
           <p className="text-white/80 leading-relaxed mb-8">
-            Fordern Sie jetzt ein kostenloses Erstgespräch an oder senden Sie mir direkt Ihr Dokument für ein Angebot.
+            In einem kurzen Gespräch klären wir Ihren Bedarf – unverbindlich und kostenlos.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button asChild size="lg" className="bg-[#b45309] hover:bg-[#d97706] text-white rounded-md">
-              <Link href="/kontakt">Erstgespräch anfragen</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#1a365d] rounded-md bg-transparent"
-            >
-              <Link href="/kontakt">Angebot anfordern</Link>
+              <Link href="/kontakt">Kostenloses Erstgespräch anfragen</Link>
             </Button>
           </div>
         </RevealOnScroll>

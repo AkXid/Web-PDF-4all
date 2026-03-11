@@ -59,7 +59,7 @@ export function HeroSection() {
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-[#1a365d] rounded-md bg-transparent"
             >
-              <Link href="/kontakt">{heroContent.ctaSecondary}</Link>
+              <Link href="/bfsg-check">{heroContent.ctaSecondary}</Link>
             </Button>
           </motion.div>
           <motion.div

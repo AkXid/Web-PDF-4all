@@ -101,7 +101,7 @@ export const heroContent = {
   headline: "Informationen sollten keine Barrieren kennen.",
   subline: "Über 107 Millionen Menschen in Europa sind auf barrierefreie Dokumente angewiesen. Ich mache Ihre Kommunikation für jeden zugänglich – präzise, sicher und zukunftssicher.",
   ctaPrimary: "Kostenloses Erstgespräch anfragen",
-  ctaSecondary: "Angebot für Ihr Dokument",
+  ctaSecondary: "BFSG-Check starten",
 };
 
 export const leadMagnetContent = {
