@@ -55,3 +55,17 @@ export const counterReveal: Variants = {
     transition: { duration: 0.4, ease: "easeOut" },
   },
 };
+
+export const dropdownMenu: Variants = {
+  hidden: { opacity: 0, y: -6 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.15, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    y: -6,
+    transition: { duration: 0.1, ease: "easeIn" },
+  },
+};
