@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BFSGChecker } from "@/components/sections/BFSGChecker";
+import { GridPattern } from "@/components/ui/grid-pattern";
 
 export const metadata: Metadata = {
   title: "BFSG-Check: Bin ich betroffen?",
@@ -17,8 +18,14 @@ export default function BFSGCheckPage() {
   return (
     <>
       {/* Hero */}
-      <header className="bg-[#1a365d] text-white">
-        <div className="max-w-3xl mx-auto px-4 py-8 md:py-12">
+      <header className="relative bg-[#1a365d] text-white overflow-hidden">
+        <GridPattern
+          width={40}
+          height={40}
+          squares={[[4, 3], [9, 1], [13, 2], [17, 4], [21, 1], [24, 3], [27, 2], [30, 4]]}
+          className="fill-white/[0.07] stroke-white/[0.08] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+        />
+        <div className="relative z-10 max-w-3xl mx-auto px-4 py-8 md:py-12">
           <p className="text-sm font-medium text-white/70 mb-1 tracking-wide uppercase">
             Kostenloser Schnell-Check
           </p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog-data";
+import { GridPattern } from "@/components/ui/grid-pattern";
 import { Clock, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -23,35 +24,13 @@ export default function BlogPage() {
     <>
       {/* Hero Banner */}
       <section className="relative bg-[#1a365d] text-white py-16 md:py-20 overflow-hidden">
-        {/* Hintergrund-Grafik: Dokumenten-Linien */}
-        <svg
-          className="absolute right-0 top-0 h-full w-1/2 opacity-[0.06] pointer-events-none"
-          viewBox="0 0 400 300"
-          preserveAspectRatio="xMidYMid slice"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          {/* Dokument-Umriss */}
-          <rect x="60" y="20" width="200" height="260" rx="6" fill="none" stroke="white" strokeWidth="3" />
-          {/* Ecke umgeklappt */}
-          <path d="M220 20 L260 60 L220 60 Z" fill="white" opacity="0.5" />
-          <path d="M220 20 L260 60" fill="none" stroke="white" strokeWidth="3" />
-          {/* Textzeilen */}
-          <line x1="85" y1="90" x2="235" y2="90" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="115" x2="235" y2="115" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="140" x2="235" y2="140" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="165" x2="200" y2="165" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="190" x2="235" y2="190" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="215" x2="175" y2="215" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="85" y1="240" x2="235" y2="240" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          {/* Zweites Dokument versetzt im Hintergrund */}
-          <rect x="140" y="50" width="200" height="260" rx="6" fill="none" stroke="white" strokeWidth="2" opacity="0.4" />
-          <line x1="165" y1="120" x2="315" y2="120" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
-          <line x1="165" y1="145" x2="315" y2="145" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
-          <line x1="165" y1="170" x2="280" y2="170" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
-        </svg>
-
-        <div className="relative max-w-6xl mx-auto px-4">
+        <GridPattern
+          width={40}
+          height={40}
+          squares={[[3, 1], [8, 3], [13, 2], [17, 1], [21, 4], [24, 2], [27, 3], [31, 1]]}
+          className="fill-white/[0.07] stroke-white/[0.08] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+        />
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
             Blog
           </h1>

@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/config";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { GridPattern } from "@/components/ui/grid-pattern";
 import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react";
 
 export function generateStaticParams() {
@@ -23,6 +24,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// Pro Leistungsseite: Squares über die gesamte Breite, rechts stärker besetzt
+const HERO_SQUARES: Record<string, Array<[number, number]>> = {
+  "pdf-ua-konvertierung":      [[3, 1], [8, 3], [14, 2], [18, 4], [21, 1], [24, 3], [27, 2], [30, 4]],
+  "komplexe-pdf-formulare":    [[4, 2], [9, 1], [13, 3], [17, 2], [21, 4], [24, 1], [27, 3], [31, 2]],
+  "pdf-bestandsanalyse":       [[2, 3], [7, 1], [12, 4], [16, 2], [20, 3], [23, 1], [26, 4], [29, 2]],
+  "alternativtexte":           [[5, 1], [10, 3], [15, 2], [19, 4], [22, 1], [25, 3], [28, 2], [31, 4]],
+  "barrierefreiheitspruefung": [[3, 2], [8, 4], [13, 1], [17, 3], [21, 2], [24, 4], [27, 1], [30, 3]],
+  "white-label":               [[4, 1], [9, 3], [14, 2], [18, 1], [22, 4], [25, 2], [28, 3], [31, 1]],
+};
+
 const defaultProcessSteps = [
   { step: "1", title: "Anfrage", desc: "Sie senden mir Ihr Dokument oder beschreiben Ihr Projekt." },
   { step: "2", title: "Analyse", desc: "Ich prüfe den Umfang und erstelle ein unverbindliches Angebot." },
@@ -36,6 +47,7 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
   if (!service) notFound();
 
   const processSteps = service.processSteps ?? defaultProcessSteps;
+  const heroSquares = HERO_SQUARES[slug] ?? [[3, 2], [9, 1], [14, 3], [19, 2], [22, 4], [25, 1], [28, 3], [31, 2]];
 
   const schema = {
     "@context": "https://schema.org",
@@ -51,8 +63,14 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* Mini Hero */}
-      <section className="bg-[#1a365d] text-white py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="relative bg-[#1a365d] text-white py-16 md:py-20 overflow-hidden">
+        <GridPattern
+          width={40}
+          height={40}
+          squares={heroSquares}
+          className="fill-white/[0.07] stroke-white/[0.08] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+        />
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <Badge variant="accent" className="mb-4">Leistung</Badge>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">{service.title}</h1>
           <p className="text-lg text-white/80 max-w-2xl leading-relaxed">{service.short}</p>
