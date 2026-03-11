@@ -24,8 +24,8 @@ export default function DatenschutzPage() {
           <p>
             <ProtectedText parts={["Drag", "an ", "Bena"]} /><br />
             Autónomo (Einzelunternehmer)<br />
-            Calle Bilbao 7<br />
-            03170 Rojales, España<br />
+            Av. Maisonnave, nº 41, 3º<br />
+            03003 Alicante, España<br />
             E-Mail: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 

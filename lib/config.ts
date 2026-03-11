@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
     phone: "+34 613 590 301",
     email: "info@pdf-4all.de",
     emailContact: "bena@pdf-4all.de",
-    address: { street: "[Straße]", zip: "[PLZ]", city: "[Ort]" },
+    address: { street: "Av. Maisonnave, nº 41, 3º", zip: "03003", city: "Alicante" },
     region: "deutschlandweit (remote)",
     serviceRadius: "deutschlandweit (remote)",
     openingHours: { weekdays: "Mo–Fr: 09:00–17:00 Uhr", saturday: "nach Vereinbarung" },

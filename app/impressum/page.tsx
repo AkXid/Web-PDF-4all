@@ -22,8 +22,8 @@ export default function ImpressumPage() {
             <strong>Rechtsform:</strong> Autónomo (Einzelunternehmer)<br />
             <strong>Steueridentifikationsnummer (NIF):</strong> <ProtectedText parts={["X42", "566", "83G"]} /><br />
             <strong>Eingetragene Adresse:</strong><br />
-            Calle Bilbao 7<br />
-            03170 Rojales<br />
+            Av. Maisonnave, nº 41, 3º<br />
+            03003 Alicante<br />
             España / Spanien
           </p>
 

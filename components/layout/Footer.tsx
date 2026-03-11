@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, Clock, Linkedin } from "lucide-react";
+import { Mail, Phone, Clock, Linkedin, MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/config";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 import { services } from "@/lib/services-data";
@@ -96,6 +96,14 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" />
                 <span>{siteConfig.company.openingHours.weekdays}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+                <span>
+                  {siteConfig.company.address.street}<br />
+                  {siteConfig.company.address.zip} {siteConfig.company.address.city}<br />
+                  España
+                </span>
               </li>
             </ul>
           </div>

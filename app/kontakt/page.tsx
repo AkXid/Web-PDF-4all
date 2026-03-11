@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/lib/config";
 import { services } from "@/lib/services-data";
-import { Phone, Mail, Clock, Send } from "lucide-react";
+import { Phone, Mail, Clock, Send, MapPin } from "lucide-react";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 
 const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "https://formspree.io/f/xgolqgpd";
@@ -219,7 +219,15 @@ export default function KontaktPage() {
                     />
                   </div>
                 </li>
-<li className="flex items-start gap-3">
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
+                  <div>
+                    <p className="font-medium text-slate-900">Adresse</p>
+                    <p>{siteConfig.company.address.street}</p>
+                    <p>{siteConfig.company.address.zip} {siteConfig.company.address.city}, España</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-[#1a365d] mt-0.5 shrink-0" />
                   <div>
                     <p className="font-medium text-slate-900">Erreichbarkeit</p>
