@@ -153,8 +153,7 @@ function buildConfirmationHtml(anrede: string, name: string): string {
         <p style="margin:0;font-size:14px;color:${TEXT_MUTED};line-height:1.7;">
           Mit freundlichen Grüßen<br/>
           <strong style="color:${TEXT_MAIN};">Dragan Bena</strong><br/>
-          PDF/UA Accessibility Senior Specialist<br/>
-          <a href="https://www.pdf-4all.de" style="color:${PRIMARY};text-decoration:none;">pdf-4all.de</a>
+          PDF/UA Accessibility Senior Specialist
         </p>
       </td>
     </tr>
