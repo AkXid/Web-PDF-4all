@@ -12,7 +12,6 @@ import { services } from "@/lib/services-data";
 import { Phone, Mail, Clock, Send, MapPin } from "lucide-react";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 
-const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "https://formspree.io/f/xgolqgpd";
 
 const contactSchema = z.object({
   anrede: z.string().min(1, "Bitte wählen Sie eine Anrede"),
@@ -43,12 +42,9 @@ export default function KontaktPage() {
 
     setSubmitError(null);
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           anrede: data.anrede,
           name: data.name,
@@ -64,7 +60,7 @@ export default function KontaktPage() {
       } else {
         const json = await response.json();
         setSubmitError(
-          json?.errors?.[0]?.message ||
+          json?.error ||
             "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
         );
       }
@@ -82,7 +78,7 @@ export default function KontaktPage() {
           Kontakt aufnehmen
         </h1>
         <p className="text-slate-600 leading-relaxed mb-10 max-w-2xl">
-          Schildern Sie mir Ihr Anliegen – ich melde mich innerhalb von 24 Stunden bei Ihnen.
+          Schildern Sie mir Ihr Anliegen – ich melde mich schnellstmöglich bei Ihnen.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -92,7 +88,7 @@ export default function KontaktPage() {
               <div className="bg-green-50 border border-green-200 p-8 text-center">
                 <h2 className="text-xl font-bold text-green-800 mb-2">Vielen Dank!</h2>
                 <p className="text-green-700">
-                  Ich melde mich innerhalb von 24 Stunden bei Ihnen.
+                  Ich melde mich schnellstmöglich bei Ihnen – in der Regel innerhalb eines Werktages.
                 </p>
               </div>
             ) : (
