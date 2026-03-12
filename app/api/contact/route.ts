@@ -133,7 +133,7 @@ function buildConfirmationHtml(anrede: string, name: string): string {
         <table cellpadding="0" cellspacing="0">
           <tr>
             <td style="padding:6px 0;font-size:14px;color:${TEXT_MAIN};line-height:1.6;">
-              &#8594;&nbsp; Schauen Sie sich meine <a href="https://www.pdf-4all.de/leistungen" style="color:${PRIMARY};">Leistungen</a> an
+              &#8594;&nbsp; Schauen Sie sich meine <a href="https://www.pdf-4all.de/#leistungen" style="color:${PRIMARY};">Leistungen</a> an
             </td>
           </tr>
           <tr>

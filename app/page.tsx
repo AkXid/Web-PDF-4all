@@ -57,7 +57,9 @@ export default function HomePage() {
       <HeroSection />
       <TrustBar />
       <TargetAudience />
-      <ServicesGrid />
+      <div id="leistungen">
+        <ServicesGrid />
+      </div>
       <LeadMagnet />
       <FAQSection />
       <AboutMe />
