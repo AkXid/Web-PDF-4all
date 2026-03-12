@@ -32,9 +32,8 @@ function emailWrapper(content: string): string {
 
               <!-- Header -->
               <tr>
-                <td style="background:${PRIMARY};padding:28px 40px;">
-                  <p style="margin:0;font-size:22px;font-weight:bold;color:#ffffff;letter-spacing:-0.5px;">PDF-4all.de</p>
-                  <p style="margin:4px 0 0;font-size:12px;color:#a0aec0;letter-spacing:0.05em;">PDF/UA Accessibility</p>
+                <td style="background:#ffffff;padding:24px 40px;border-bottom:3px solid ${PRIMARY};">
+                  <img src="${LOGO_URL}" alt="PDF-4all Logo" width="160" style="display:block;height:auto;max-width:160px;" />
                 </td>
               </tr>
 
