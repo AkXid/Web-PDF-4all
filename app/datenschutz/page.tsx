@@ -107,25 +107,28 @@ export default function DatenschutzPage() {
             </a>
           </p>
 
-          {/* 5. Kontaktformular – Formspree */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">5. Kontaktformular – Formspree</h2>
+          {/* 5. Kontaktformular & E-Mail-Versand – Resend */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">5. Kontaktformular &amp; E-Mail-Versand – Resend</h2>
           <p>
-            Das Kontaktformular auf dieser Website wird über den Dienst <strong>Formspree</strong>
-            (Formspree, Inc., 2093 Philadelphia Pike #3226, Claymont, DE 19703, USA) betrieben.
-            Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten (Name,
-            E-Mail-Adresse, Nachricht) an Formspree übermittelt und von dort direkt an meine
-            E-Mail-Adresse weitergeleitet. Eine Speicherung der Daten über die Weiterleitung
-            hinaus erfolgt nicht.
+            Das Kontaktformular auf dieser Website nutzt den E-Mail-Versanddienst <strong>Resend</strong>
+            (Resend Technologies Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA).
+            Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten (Anrede,
+            Name, E-Mail-Adresse, Telefon, Betreff und Nachricht) über eine serverseitige API-Route
+            an Resend übermittelt. Resend stellt diese Daten als E-Mail an meine Geschäftsadresse zu
+            und sendet Ihnen gleichzeitig eine automatische Empfangsbestätigung an die von Ihnen
+            angegebene E-Mail-Adresse.
           </p>
           <p>
             Die Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht
-            an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
-            (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
-            der Beantwortung von Anfragen). Formspree ist unter dem EU-US Data Privacy Framework
+            an Dritte weitergegeben. Eine dauerhafte Speicherung der Formulardaten bei Resend
+            über den Versandvorgang hinaus erfolgt nicht. Rechtsgrundlage ist Art. 6 Abs. 1
+            lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+            Interesse an der Beantwortung von Anfragen). Resend verarbeitet Daten in der
+            EU-Region (Irland, eu-west-1) und ist unter dem EU-US Data Privacy Framework
             zertifiziert. Weitere Informationen:{" "}
-            <a href="https://formspree.io/legal/privacy-policy/"
+            <a href="https://resend.com/legal/privacy-policy"
               target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
-              Datenschutzrichtlinie Formspree
+              Datenschutzrichtlinie Resend
             </a>
           </p>
 
