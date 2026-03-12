@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { ProtectedText, ProtectedLink } from "@/components/shared/ProtectedText";
 
-export const metadata: Metadata = { title: "Impressum / Aviso Legal" };
+export const metadata: Metadata = {
+  title: "Impressum / Aviso Legal",
+  robots: { index: false, follow: false },
+};
 
 export default function ImpressumPage() {
   return (

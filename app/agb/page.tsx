@@ -3,6 +3,7 @@ import { ProtectedText } from "@/components/shared/ProtectedText";
 
 export const metadata: Metadata = {
   title: "Allgemeine Geschäftsbedingungen",
+  robots: { index: false, follow: false },
 };
 
 export default function AGBPage() {
