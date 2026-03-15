@@ -48,6 +48,8 @@ function renderMarkdown(content: string): string {
     .replace(/^### (.+)$/gm, '<h3 class="text-xl font-bold text-slate-900 mt-8 mb-3">$1</h3>')
     // Fett
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
+    // Links
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#b45309] hover:text-[#d97706] underline underline-offset-2 transition-colors">$1</a>')
     // Absätze
     .split("\n\n")
     .map((block) => {

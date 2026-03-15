@@ -11,6 +11,60 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tagged-pdf-erklaert",
+    title: "Tagged PDF: Was steckt dahinter – und warum sollten Sie das kennen?",
+    excerpt:
+      "Ein PDF ist ein PDF, oder? Nicht ganz. Ob ein PDF nur gut aussieht oder auch wirklich gelesen werden kann – das entscheidet sich unsichtbar im Hintergrund. Genau dafür gibt es das Tagged PDF.",
+    date: "2026-03-15",
+    readingTime: 4,
+    category: "Grundlagen",
+    metaDescription:
+      "Ein Tagged PDF ist mehr als ein gut aussehendes Dokument. Erfahren Sie, was Tags leisten, warum sie für Screenreader entscheidend sind – und was ohne sie schiefläuft.",
+    content: `Ein PDF ist ein PDF, oder? Nicht ganz. Ob ein PDF nur gut aussieht oder auch wirklich gelesen werden kann – das entscheidet sich unsichtbar im Hintergrund. Genau dafür gibt es das Tagged PDF.
+
+## Was ein Tag in einem PDF eigentlich macht
+
+Wenn Sie ein PDF öffnen, sehen Sie Text, Bilder, Überschriften. Aber ein Screenreader – also die Software, die blinden oder sehbehinderten Menschen Inhalte vorliest – sieht das anders. Er braucht Struktur. Er muss wissen: Das ist eine Überschrift. Das ist ein Absatz. Das ist eine Tabelle mit drei Spalten. Das ist ein Bild mit einer Beschreibung.
+
+Genau das leisten Tags. Sie sind unsichtbare Metadaten im Dokument, die den Inhalt strukturieren und beschreibbar machen. Ein getaggtes PDF weiß, was es ist – nicht nur wie es aussieht.
+
+## Ein PDF ohne Tags – was passiert dann?
+
+Stellen Sie sich vor, Sie lesen einen Text, bei dem alle Leerzeichen und Absätze fehlen. Alles ein langer Zeichenblock. Ungefähr so erlebt ein Screenreader ein PDF ohne Tags. Er kann den Inhalt irgendwie vorlesen, aber die Reihenfolge stimmt nicht, Überschriften werden nicht erkannt, Tabellen klingen wie Kauderwelsch.
+
+Das ist kein Nischenproblem. In Deutschland leben rund 1,2 Millionen blinde und sehbehinderte Menschen – plus alle, die temporär eingeschränkt sind, ein Dokument per Tastatur navigieren oder einfach von einer klaren Struktur profitieren.
+
+## Was ein Tagged PDF konkret besser macht
+
+Ein getaggtes PDF hat eine logische Lesereihenfolge. Screenreader lesen den Inhalt in der richtigen Reihenfolge – nicht nach der visuellen Position auf der Seite, sondern nach der inhaltlichen Logik.
+
+Überschriften sind als Überschriften erkennbar. Das klingt banal, ist es aber nicht. Wer mit Tastatur oder Screenreader navigiert, springt zwischen Überschriften. Ohne Tags geht das nicht.
+
+Bilder bekommen [Alternativtexte](/leistungen/alternativtexte). Ein Tagged PDF kann beschreibende Texte für Grafiken hinterlegen – was das Bild zeigt, welche Information es trägt. Für jemanden der nicht sieht, ist das der Unterschied zwischen Information und Lücke.
+
+Tabellen werden als Tabellen erkannt. Kopfzeilen, Spalten, Zellen – das alles bekommt eine Struktur die Sinn macht, wenn man es vorgelesen bekommt.
+
+## Ein kurzes Beispiel aus der Praxis
+
+Ich hatte kürzlich ein Angebot als PDF – vier Seiten, sauber gestaltet, professionell. Kein einziger Tag drin. Der Screenreader hat die Seitenzahl vor dem ersten Absatz vorgelesen, dann die Fußzeile, dann irgendwo mittendrin den Firmennamen. Inhaltlich war alles da. Nutzbar war es nicht.
+
+Dasselbe Dokument, diesmal korrekt getaggt: Überschriften als Überschriften, Absätze als Absätze, die Tabelle mit Preisen als echte Tabelle – alles in der Reihenfolge, wie es gemeint war.
+
+Von außen sieht das PDF genauso aus wie vorher. Gleiche Schrift, gleiche Seiten, gleiche Gestaltung. Was sich geändert hat, steckt innen drin – und genau dort entscheidet sich, ob ein Dokument für alle funktioniert oder nur für manche.
+
+## Und was hat das mit PDF/UA zu tun?
+
+PDF/UA ist der internationale Standard für barrierefreie PDFs – und Tags sind seine Grundlage. Ohne ein vollständig getaggtes Dokument ist [PDF/UA-Konformität](/leistungen/pdf-ua-konvertierung) schlicht nicht möglich. Tags sind kein optionales Extra, sondern das Fundament.
+
+Gerade weil der Markt gerade voller Tools und Versprechen ist, die Barrierefreiheit automatisch oder auf Knopfdruck liefern sollen, lohnt es sich genau hinzuschauen. Ein PDF kann optisch tadellos wirken und trotzdem für Menschen mit Screenreader komplett unbrauchbar sein. Der Unterschied liegt nicht im Design – er liegt in der Struktur darunter.
+
+Und noch etwas das oft übersehen wird: Ein Prüftool kann ein PDF als fehlerfrei ausgeben – und trotzdem ist es nicht wirklich barrierefrei. Tools prüfen was messbar ist. Ob ein Alternativtext wirklich beschreibt was auf einem Bild zu sehen ist, ob die Lesereihenfolge inhaltlich Sinn ergibt, ob eine Tabelle beim Vorlesen verständlich bleibt – das kann kein Algorithmus beurteilen. Dafür braucht es Fachverständnis und eine [manuelle Prüfung](/leistungen/barrierefreiheitspruefung).
+
+Wer seine Dokumente also ernsthaft zugänglich machen will – nicht nur optisch, sondern wirklich nutzbar für alle – kommt an einem ordentlich getaggten PDF nicht vorbei.
+
+Haben Sie schon mal geprüft, ob Ihre wichtigsten PDFs überhaupt Tags haben? Das geht schneller als Sie denken – und was Sie dabei finden, ist meistens aufschlussreich.`,
+  },
+  {
     slug: "bfsg-pdf-pflicht",
     title: "BFSG PDF Pflicht: Wer ist wirklich betroffen – und wer nicht?",
     excerpt:
