@@ -197,7 +197,7 @@ export default function DatenschutzPage() {
             Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager selbst
             verarbeitet keine personenbezogenen Daten und setzt keine Cookies. Er dient
             ausschließlich der technischen Verwaltung und dem Laden der auf dieser Website
-            eingesetzten Skripte (z. B. Google Analytics 4).
+            eingesetzten Skripte (z. B. Google Analytics 4, Microsoft Clarity).
           </p>
           <p>
             Die über den Google Tag Manager eingebundenen Dienste unterliegen den in den
@@ -241,8 +241,41 @@ export default function DatenschutzPage() {
             </a>
           </p>
 
-          {/* 11. Ihre Rechte */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">11. Ihre Rechte als betroffene Person</h2>
+          {/* 11. Microsoft Clarity */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">11. Microsoft Clarity</h2>
+
+          <p>
+            Diese Website nutzt <strong>Microsoft Clarity</strong>, einen Verhaltensanalyse-Dienst
+            der <strong>Microsoft Corporation</strong>, One Microsoft Way, Redmond, WA 98052, USA.
+            Microsoft Clarity wird über den Google Tag Manager geladen und{" "}
+            <strong>nur aktiviert, wenn Sie im Cookie-Banner der Kategorie „Statistiken"
+            zugestimmt haben</strong>.
+          </p>
+          <p>
+            Microsoft Clarity erfasst anonymisierte Daten über das Nutzungsverhalten auf dieser
+            Website, darunter Mausbewegungen, Klicks, Scrollverhalten und Sitzungsaufzeichnungen
+            (sogenannte Session Recordings) sowie Heatmaps. Diese Daten helfen dabei, die
+            Benutzerfreundlichkeit der Website zu verbessern. Personenbezogene Daten wie
+            Passwörter oder Zahlungsinformationen werden von Microsoft Clarity automatisch
+            maskiert und nicht aufgezeichnet.
+          </p>
+          <p>
+            Microsoft Clarity setzt Cookies (<code>_clck</code>, <code>_clsk</code>,{" "}
+            <code>CLID</code>) zur Erfassung von Sitzungsdaten. Die erhobenen Daten werden auf
+            Servern von Microsoft in den USA gespeichert. Microsoft ist unter dem EU-US Data
+            Privacy Framework zertifiziert, sodass ein angemessenes Datenschutzniveau
+            gewährleistet ist. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+            Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen,
+            indem Sie über den Cookie-Banner die Kategorie „Statistiken" deaktivieren. Weitere
+            Informationen:{" "}
+            <a href="https://privacy.microsoft.com/de-de/privacystatement"
+              target="_blank" rel="noopener noreferrer" className="text-[#1a365d] hover:underline">
+              Microsoft Datenschutzerklärung
+            </a>
+          </p>
+
+          {/* 12. Ihre Rechte */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">12. Ihre Rechte als betroffene Person</h2>
           <p>Gemäß DSGVO und LOPDGDD haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
           <ul className="list-disc pl-5 space-y-1 mt-2">
             <li><strong>Auskunft</strong> (Art. 15 DSGVO): Sie können Auskunft über die von mir gespeicherten Daten verlangen.</li>
@@ -257,8 +290,8 @@ export default function DatenschutzPage() {
             Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <ProtectedText parts={["bena", "@pdf", "-4all", ".de"]} />
           </p>
 
-          {/* 12. Beschwerderecht */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">12. Beschwerderecht bei der Aufsichtsbehörde</h2>
+          {/* 13. Beschwerderecht */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">13. Beschwerderecht bei der Aufsichtsbehörde</h2>
           <p>
             Sie haben das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.
             Als in Spanien ansässiger Verantwortlicher ist die zuständige Behörde:
@@ -277,16 +310,16 @@ export default function DatenschutzPage() {
             zuständige deutsche Landesdatenschutzbehörde wenden.
           </p>
 
-          {/* 13. Datensicherheit */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">13. Datensicherheit</h2>
+          {/* 14. Datensicherheit */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">14. Datensicherheit</h2>
           <p>
             Diese Website nutzt aus Sicherheitsgründen eine SSL/TLS-Verschlüsselung. Eine
             verschlüsselte Verbindung erkennen Sie an dem „https://" in der Adresszeile Ihres
             Browsers. Übermittelte Daten können so nicht von Dritten mitgelesen werden.
           </p>
 
-          {/* 14. Aktualisierung */}
-          <h2 className="text-lg font-bold text-slate-900 mt-8">14. Aktualisierung dieser Datenschutzerklärung</h2>
+          {/* 15. Aktualisierung */}
+          <h2 className="text-lg font-bold text-slate-900 mt-8">15. Aktualisierung dieser Datenschutzerklärung</h2>
           <p>
             Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an
             geänderte Rechtslage oder Änderungen der Website anzupassen. Die jeweils aktuelle
