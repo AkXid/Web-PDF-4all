@@ -18,7 +18,7 @@ export const services: ServiceData[] = [
     slug: "pdf-ua-konvertierung",
     title: "Manuelle Tag-Strukturierung",
     icon: "Tags",
-    short: "Wir bauen die logische Baumstruktur (Tags) Ihrer Dokumente von Grund neu auf.",
+    short: "Ich baue die logische Baumstruktur (Tags) Ihrer Dokumente von Grund neu auf.",
     description: "Jedes PDF, das durch meine Hände geht, wird manuell geprüft, getaggt und optimiert – Schritt für Schritt, ohne Abkürzungen. Ich setze bewusst keine KI-Tools oder automatisierten Konverter ein, denn echte Barrierefreiheit lässt sich nicht auf Knopfdruck erzeugen. Das kostet Zeit, aber genau das ist der Unterschied zwischen einem Dokument, das die Anforderungen erfüllt, und einem, das wirklich barrierefrei ist.",
     customerProblems: [
       "Ihre PDFs entsprechen nicht der PDF/UA-Norm?",
