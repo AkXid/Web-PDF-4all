@@ -44,9 +44,9 @@ Ein getaggtes PDF hat eine logische Lesereihenfolge. Screenreader lesen den Inha
 
 Überschriften sind als Überschriften erkennbar. Das klingt banal, ist es aber nicht. Wer mit Tastatur oder Screenreader navigiert, springt zwischen Überschriften. Ohne Tags geht das nicht.
 
-Bilder bekommen [Alternativtexte](/leistungen/alternativtexte). Ein Tagged PDF kann beschreibende Texte für Grafiken hinterlegen – was das Bild zeigt, welche Information es trägt. Für jemanden der nicht sieht, ist das der Unterschied zwischen Information und Lücke.
+Bilder bekommen [Alternativtexte](/leistungen/alternativtexte). Ein Tagged PDF kann beschreibende Texte für Grafiken hinterlegen – was das Bild zeigt, welche Information es trägt. Für jemanden, der nicht sieht, ist das der Unterschied zwischen Information und Lücke.
 
-Tabellen werden als Tabellen erkannt. Kopfzeilen, Spalten, Zellen – das alles bekommt eine Struktur die Sinn macht, wenn man es vorgelesen bekommt.
+Tabellen werden als Tabellen erkannt. Kopfzeilen, Spalten, Zellen – das alles bekommt eine Struktur, die Sinn macht, wenn man es vorgelesen bekommt.
 
 ## Ein kurzes Beispiel aus der Praxis
 
@@ -60,9 +60,9 @@ Von außen sieht das PDF genauso aus wie vorher. Gleiche Schrift, gleiche Seiten
 
 PDF/UA ist der internationale Standard für barrierefreie PDFs – und Tags sind seine Grundlage. Ohne ein vollständig getaggtes Dokument ist [PDF/UA-Konformität](/leistungen/pdf-ua-konvertierung) schlicht nicht möglich. Tags sind kein optionales Extra, sondern das Fundament.
 
-Gerade weil der Markt gerade voller Tools und Versprechen ist, die Barrierefreiheit automatisch oder auf Knopfdruck liefern sollen, lohnt es sich genau hinzuschauen. Ein PDF kann optisch tadellos wirken und trotzdem für Menschen mit Screenreader komplett unbrauchbar sein. Der Unterschied liegt nicht im Design – er liegt in der Struktur darunter.
+Gerade weil der Markt derzeit voller Tools und Versprechen ist, die Barrierefreiheit automatisch oder auf Knopfdruck liefern sollen, lohnt es sich genau hinzuschauen. Ein PDF kann optisch tadellos wirken und trotzdem für Menschen mit Screenreader komplett unbrauchbar sein. Der Unterschied liegt nicht im Design – er liegt in der Struktur darunter.
 
-Und noch etwas das oft übersehen wird: Ein Prüftool kann ein PDF als fehlerfrei ausgeben – und trotzdem ist es nicht wirklich barrierefrei. Tools prüfen was messbar ist. Ob ein Alternativtext wirklich beschreibt was auf einem Bild zu sehen ist, ob die Lesereihenfolge inhaltlich Sinn ergibt, ob eine Tabelle beim Vorlesen verständlich bleibt – das kann kein Algorithmus beurteilen. Dafür braucht es Fachverständnis und eine [manuelle Prüfung](/leistungen/barrierefreiheitspruefung).
+Und noch etwas, das oft übersehen wird: Ein Prüftool kann ein PDF als fehlerfrei ausgeben – und trotzdem ist es nicht wirklich barrierefrei. Tools prüfen, was messbar ist. Ob ein Alternativtext wirklich beschreibt, was auf einem Bild zu sehen ist, ob die Lesereihenfolge inhaltlich Sinn ergibt, ob eine Tabelle beim Vorlesen verständlich bleibt – das kann kein Algorithmus beurteilen. Dafür braucht es Fachverständnis und eine [manuelle Prüfung](/leistungen/barrierefreiheitspruefung).
 
 Wer seine Dokumente also ernsthaft zugänglich machen will – nicht nur optisch, sondern wirklich nutzbar für alle – kommt an einem ordentlich getaggten PDF nicht vorbei.
 
@@ -84,27 +84,27 @@ Haben Sie schon mal geprüft, ob Ihre wichtigsten PDFs überhaupt Tags haben? Da
 
 ## Das Gesetz gilt nicht für alle
 
-Wer "BFSG" hört, denkt oft: betrifft mich bestimmt. Das stimmt so nicht. Das Gesetz richtet sich an Unternehmen, die Produkte oder Dienstleistungen an Verbraucher anbieten – also im B2C-Bereich tätig sind. Reine B2B-Unternehmen, die ausschließlich mit anderen Unternehmen arbeiten, sind grundsätzlich nicht betroffen.
+Wer „BFSG" hört, denkt oft: betrifft mich bestimmt. Das stimmt so nicht. Das Gesetz richtet sich an Unternehmen, die Produkte oder Dienstleistungen an Verbraucher anbieten – also im B2C-Bereich tätig sind. Reine B2B-Unternehmen, die ausschließlich mit anderen Unternehmen arbeiten, sind grundsätzlich nicht betroffen.
 
-Kleinstunternehmen sind ebenfalls weitgehend ausgenommen. Wer weniger als zehn Mitarbeiter hat und unter zwei Millionen Euro Jahresumsatz bleibt, muss in den meisten Fällen nichts ändern. Die Ausnahme: Wer Produkte herstellt, die explizit im Gesetz genannt werden – da greift die Ausnahme nicht.
+Kleinstunternehmen sind ebenfalls weitgehend ausgenommen. Wer weniger als zehn Mitarbeiter hat und unter zwei Millionen Euro Jahresumsatz bleibt, muss in den meisten Fällen nichts ändern. Einzige Einschränkung: Wer Produkte herstellt, die explizit im Gesetz genannt werden – für diese Kategorie gilt die Ausnahme nicht.
 
 ## Wann werden PDFs zum Thema?
 
-PDFs sind dann betroffen, wenn sie Teil einer Dienstleistung sind, die Verbraucher nutzen. Ein Online-Shop der Rechnungen als PDF verschickt, eine Bank die Kontoauszüge als Download anbietet, ein Versicherer der Vertragsunterlagen digital bereitstellt – all das fällt unter das Gesetz.
+PDFs sind dann betroffen, wenn sie Teil einer Dienstleistung sind, die Verbraucher nutzen. Ein Online-Shop, der Rechnungen als PDF verschickt, eine Bank, die Kontoauszüge als Download anbietet, ein Versicherer, der Vertragsunterlagen digital bereitstellt – all das fällt unter das Gesetz.
 
-Das Dokument selbst muss dann den PDF/UA-Standard erfüllen. Das bedeutet: korrekte Tag-Struktur, logische Lesereihenfolge, Alternativtexte für Bilder, hinterlegte Dokumentsprache. Kein Hexenwerk – aber auch kein Selbstläufer. Ein PDF das gut aussieht, ist noch lange nicht barrierefrei.
+Das Dokument selbst muss dann den PDF/UA-Standard erfüllen. Das bedeutet: korrekte Tag-Struktur, logische Lesereihenfolge, Alternativtexte für Bilder, hinterlegte Dokumentsprache. Kein Hexenwerk – aber auch kein Selbstläufer. Ein PDF, das gut aussieht, ist noch lange nicht barrierefrei.
 
 Wer seine PDFs nachträglich anpassen muss, merkt schnell: Das kostet Zeit. Wer es von Anfang an richtig aufsetzt, spart sich diesen Aufwand.
 
 ## Was passiert bei Verstößen?
 
-Das BFSG ist kein zahnloser Tiger. Bei Verstößen drohen Bußgelder bis zu 100.000 Euro – und Abmahnungen, die in ihrer Wirkung ähnlich schmerzhaft sein können. Die Behörden haben bis Ende 2025 etwas Zeit gehabt, sich einzuspielen. Ab 2026 dürfte die Durchsetzung ernster werden.
+Das Gesetz sieht Bußgelder vor – die Höhe hängt von Schwere und Dauer ab. Bisher sind Bußgelder in der Praxis noch selten verhängt worden. Wer handelt, tut das also weniger aus Angst vor Strafen, sondern weil es einfach sinnvoll ist – für die eigenen Kunden und für ein sauberes digitales Angebot.
 
-Wer jetzt noch nicht geprüft hat ob seine Dokumente den Anforderungen entsprechen, sollte das nachholen. Der kostenlose PAC-Checker (PDF Accessibility Checker) liefert in wenigen Minuten eine erste Einschätzung – ohne Expertenwissen, ohne Kosten.
+Wer jetzt noch nicht geprüft hat, ob seine Dokumente den Anforderungen entsprechen, sollte das nachholen. Der kostenlose PAC-Checker (PDF Accessibility Checker) liefert in wenigen Minuten eine erste Einschätzung – ohne Expertenwissen, ohne Kosten.
 
 ## Eine ehrliche Einschätzung
 
-Ist das BFSG ein bürokratisches Monstrum? Für viele kleine Unternehmen: nein, sie sind gar nicht betroffen. Für größere B2C-Anbieter: der Aufwand ist real, aber überschaubar wenn man strukturiert vorgeht.
+Ist das BFSG ein bürokratisches Monstrum? Für viele kleine Unternehmen: nein, sie sind gar nicht betroffen. Für größere B2C-Anbieter: der Aufwand ist real, aber überschaubar, wenn man strukturiert vorgeht.
 
 Das Gesetz hat einen sinnvollen Kern. Menschen mit Behinderungen – rund 135 Millionen in der EU – sollen digitale Inhalte genauso nutzen können wie alle anderen. Das ist kein unrealistisches Ziel.
 
