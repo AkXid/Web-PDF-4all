@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/lib/blog-data";
 import { GridPattern } from "@/components/ui/grid-pattern";
 import { Clock, ArrowRight } from "lucide-react";
@@ -69,6 +70,18 @@ export default function BlogPage() {
                     {post.category}
                   </span>
                 </div>
+
+                {/* Vorschaubild */}
+                {post.heroImage && (
+                  <div className="relative w-full h-44 overflow-hidden">
+                    <Image
+                      src={post.heroImage}
+                      alt={post.heroImageAlt ?? ""}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
 
                 {/* Inhalt */}
                 <div className="p-6 flex flex-col flex-1">
