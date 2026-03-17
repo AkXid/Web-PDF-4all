@@ -72,7 +72,7 @@ Haben Sie schon mal geprüft, ob Ihre wichtigsten PDFs überhaupt Tags haben? Da
     slug: "bfsg-pdf-pflicht",
     title: "BFSG PDF Pflicht: Wer ist wirklich betroffen – und wer nicht?",
     heroImage: "/blog/Punk-Zine-Collage-Plakat.png",
-    heroImageAlt: "Ein Punk-Zine-Collage-Plakat auf giftgrünem Hintergrund. Der Text „Klarheit statt Halbwahrheit" umrahmt einen blauen Tisch mit fiktiven Firmenlogos, wobei B2C-Logos in einem gelben Lichtstrahl hervorgehoben sind.",
+    heroImageAlt: 'Ein Punk-Zine-Collage-Plakat auf giftgrünem Hintergrund. Der Text \u201eKlarheit statt Halbwahrheit\u201c umrahmt einen blauen Tisch mit fiktiven Firmenlogos, wobei B2C-Logos in einem gelben Lichtstrahl hervorgehoben sind.',
     excerpt:
       "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Viele Unternehmen wissen nicht ob sie betroffen sind. Hier ist, was wirklich gilt.",
     date: "2026-02-21",
