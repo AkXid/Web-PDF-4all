@@ -7,12 +7,16 @@ export interface BlogPost {
   category: string;
   content: string; // Markdown-Text
   metaDescription: string;
+  heroImage?: string;
+  heroImageAlt?: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "tagged-pdf-erklaert",
     title: "Tagged PDF: Was steckt dahinter – und warum sollten Sie das kennen?",
+    heroImage: "/blog/tagged-pdf-erklaert-hero.png",
+    heroImageAlt: 'Eine Person hält sich verzweifelt den Kopf vor einem Computermonitor, der chaotischen Text und die Phrase \u201ePDF Ohne Tags\u201c anzeigt. Ein Lautsprecher gibt wirre Zeichen aus. Die Collage im Risographie-Stil auf pinkem Hintergrund symbolisiert die Frustration über nicht barrierefreie digitale Inhalte.',
     excerpt:
       "Ein PDF ist ein PDF, oder? Nicht ganz. Ob ein PDF nur gut aussieht oder auch wirklich gelesen werden kann – das entscheidet sich unsichtbar im Hintergrund. Genau dafür gibt es das Tagged PDF.",
     date: "2026-03-15",

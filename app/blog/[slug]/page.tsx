@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getBlogPost, getAllSlugs } from "@/lib/blog-data";
 import { Clock, ArrowLeft } from "lucide-react";
@@ -77,6 +78,20 @@ export default async function BlogPostPage({ params }: Props) {
           <ArrowLeft className="w-4 h-4" />
           Alle Artikel
         </Link>
+
+        {/* Hero-Bild */}
+        {post.heroImage && (
+          <div className="mb-8 -mx-4 md:mx-0">
+            <Image
+              src={post.heroImage}
+              alt={post.heroImageAlt ?? ""}
+              width={1500}
+              height={600}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
+        )}
 
         {/* Kategorie */}
         <div className="mb-4">
