@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tagged-pdf-erklaert",
     title: "Tagged PDF: Was steckt dahinter – und warum sollten Sie das kennen?",
-    heroImage: "/blog/tagged-pdf-erklaert-hero.png",
+    heroImage: "/blog/tagged-pdf-erklaert-hero.webp",
     heroImageAlt: 'Eine Person hält sich verzweifelt den Kopf vor einem Computermonitor, der chaotischen Text und die Phrase \u201ePDF Ohne Tags\u201c anzeigt. Ein Lautsprecher gibt wirre Zeichen aus. Die Collage im Risographie-Stil auf pinkem Hintergrund symbolisiert die Frustration über nicht barrierefreie digitale Inhalte.',
     excerpt:
       "Ein PDF ist ein PDF, oder? Nicht ganz. Ob ein PDF nur gut aussieht oder auch wirklich gelesen werden kann – das entscheidet sich unsichtbar im Hintergrund. Genau dafür gibt es das Tagged PDF.",
@@ -71,7 +71,7 @@ Haben Sie schon mal geprüft, ob Ihre wichtigsten PDFs überhaupt Tags haben? Da
   {
     slug: "bfsg-pdf-pflicht",
     title: "BFSG PDF Pflicht: Wer ist wirklich betroffen – und wer nicht?",
-    heroImage: "/blog/Punk-Zine-Collage-Plakat.png",
+    heroImage: "/blog/Punk-Zine-Collage-Plakat.webp",
     heroImageAlt: 'Ein Punk-Zine-Collage-Plakat auf giftgrünem Hintergrund. Der Text \u201eKlarheit statt Halbwahrheit\u201c umrahmt einen blauen Tisch mit fiktiven Firmenlogos, wobei B2C-Logos in einem gelben Lichtstrahl hervorgehoben sind.',
     excerpt:
       "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Viele Unternehmen wissen nicht ob sie betroffen sind. Hier ist, was wirklich gilt.",
