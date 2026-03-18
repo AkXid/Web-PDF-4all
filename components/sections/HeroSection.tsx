@@ -22,10 +22,10 @@ export function HeroSection() {
         }}
       >
         <Image
-          src="/hero-image.png"
+          src="/hero-image.webp"
           alt="Barrierefreie PDF-Dokumente"
           fill
-          className="object-cover object-center opacity-[0.12]"
+          className="object-contain object-center opacity-[0.12]"
           priority
         />
       </div>
