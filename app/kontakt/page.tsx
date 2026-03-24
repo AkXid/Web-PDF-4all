@@ -12,6 +12,13 @@ import { services } from "@/lib/services-data";
 import { Phone, Mail, Clock, Send, MapPin } from "lucide-react";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 
+// TypeScript: dataLayer für GTM definieren
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 
 const contactSchema = z.object({
   anrede: z.string().min(1, "Bitte wählen Sie eine Anrede"),
@@ -57,6 +64,15 @@ export default function KontaktPage() {
 
       if (response.ok) {
         setSubmitted(true);
+
+        // 📊 Conversion Tracking: dataLayer Event für GTM
+        if (typeof window !== 'undefined' && window.dataLayer) {
+          window.dataLayer.push({
+            event: 'contact_form_success',
+            form_type: 'erstgutachten_anfrage',
+            form_subject: data.subject,
+          });
+        }
       } else {
         const json = await response.json();
         setSubmitError(
