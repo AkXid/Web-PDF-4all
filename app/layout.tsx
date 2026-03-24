@@ -83,11 +83,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           });
         `}</Script>
 
-        {/* 2. Cookiebot – Cookie-Banner + aktualisiert Consent Mode v2 */}
+        {/* 2. Usercentrics – Cookie-Banner + aktualisiert Consent Mode v2 */}
         <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="058f8bf7-da6b-4780-8552-20f1030e23e2"
+          id="usercentrics-cmp"
+          src="https://web.cmp.usercentrics.eu/ui/loader.js"
+          data-ruleset-id="0rVfo4jewxnPgs"
           strategy="afterInteractive"
         />
 
