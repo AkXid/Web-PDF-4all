@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script
           id="usercentrics-cmp"
           src="https://web.cmp.usercentrics.eu/ui/loader.js"
-          data-settings-id="0rVfo4jewwPiq"
+          data-settings-id="0rVfo4jewxnPgs"
           strategy="afterInteractive"
         />
 
