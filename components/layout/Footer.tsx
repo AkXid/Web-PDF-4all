@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, Clock, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Clock, Linkedin, MapPin, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/config";
 import { ProtectedLink } from "@/components/shared/ProtectedText";
 import { services } from "@/lib/services-data";
@@ -31,16 +31,27 @@ export function Footer() {
                 {siteConfig.company.certification}
               </p>
             )}
-            {/* LinkedIn Icon – Link wird noch ergänzt */}
-            <a
-              href="https://www.linkedin.com/in/dragan-bena"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Dragan Bena auf LinkedIn"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-slate-700 hover:bg-[#0077b5] text-slate-300 hover:text-white transition-colors"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
+            {/* Social Media Buttons */}
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/dragan-bena"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Dragan Bena auf LinkedIn"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-slate-700 hover:bg-[#0077b5] text-slate-300 hover:text-white transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/34613590301"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Kontakt"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-slate-700 hover:bg-[#25D366] text-slate-300 hover:text-white transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Services */}
